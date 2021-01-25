@@ -1,5 +1,6 @@
 import React from 'react';
 import logo from './logo.svg';
+import { Lifebar } from './component/Lifebar'
 import './App.css';
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
+          <Lifebar life={3} max={3} />
         </p>
         <a
           className="App-link"
