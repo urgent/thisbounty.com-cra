@@ -109,7 +109,7 @@ A security nightmare. Easier to pay people regardless.
 | Reflection, identify and acknowledge mistakes              | Daily     | -                                              |
 | Build thisbounty.com                                       | One month | 26th January, no launch, dead on 26th February |
 | Get a client                                               | One month | 26th January, no client, dead on 26th February |
-| Follow up with past clients                                | One time  | Production                                     |
+| ~~Follow up with past clients~~                            | One time  | ~~Production~~ Done!                           |
 
 ---
 
