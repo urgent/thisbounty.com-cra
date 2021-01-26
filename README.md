@@ -51,7 +51,7 @@ Too many different approaches. Every product is different.
 
 A security nightmare. Easier to pay people regardless.
 
-### Application of thisbounty.com
+## Application of thisbounty.com
 
 1. Done it before: `Building internal tool first on my time and dime. Doing it now :)`
 2. No customs: `Threw my webrtc p2p graphql misadventure into the dumpster.`
@@ -68,7 +68,7 @@ A security nightmare. Easier to pay people regardless.
 13. Do not pay for advertising: `Finding clients`
 14. Walk away: `Left decentralization behind`
 
-### Rules
+## Rules
 
 1. Three strikes, and your bounty is out.
 2. What's a strike? Problem. Roadblock. Haven't done it before. Anything that delays launch.
@@ -76,14 +76,14 @@ A security nightmare. Easier to pay people regardless.
 4. If you're out, retry with a more basic approach. For instance, DOM instead of React, or API instead of GraphQL.
 5. Money, users, resources, links per discretion. People read them though.
 
-### Navigation
+## Navigation
 
 1. Bounties can have leads, specific independent tasks. Click a bounty to see the leads.
 2. Leads can have bounties of their own. Click a lead to see the bounties.
 3. Escape back home by clicking the top bounty with the "one up" navigation symbol.
 4. Edit values through pgadmin until public release.
 
-### Public Release:
+## Public Release
 
 1. Click "New" to create a new bounty. Type in name.
 2. Click bounty, then click "New" to create a lead.
@@ -94,7 +94,7 @@ A security nightmare. Easier to pay people regardless.
 7. Chat drops to Discord.
 8. Bomb shows dissastisfcation. Repeatitive clicks lead to easter eggs.
 
-### Goals
+## Goals
 
 | Goals                                                      | Timeline  | Progress tracking                              |
 | ---------------------------------------------------------- | --------- | ---------------------------------------------- |
