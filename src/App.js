@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import { Lifebar } from './component/Lifebar'
 import './App.css';
 
@@ -7,19 +6,9 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-          <Lifebar life={3} max={3} />
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <p><a href="https://github.com/urgent/thisbounty.com" style={{ color: "#fff" }}>readme.md</a></p>
+        <p><a href="https://docs.google.com/spreadsheets/d/1RSD6Kz04bKAGty_Z_gvSYc_Gu4QtAcTPTuvkK752mEw/edit?usp=sharing" style={{ color: "#fff" }}>Bounties</a></p>
+        <p><Lifebar life={3} max={3} /></p>
       </header>
     </div>
   );
