@@ -1,5 +1,5 @@
 import React, {ReactChildren} from 'react'
-import {Heart} from './Heart'
+import { Heart } from './Heart'
 import styled from "styled-components";
 
 export const Bar = styled.ul`
@@ -15,7 +15,7 @@ export const Unit = styled.li`
     display: inline;
 `
 
-export function Lifebar({life, max, children}: {life:number, max:number, children:ReactChildren}) {
+export function Lifebar({life, max, children}: {life:number, max:number, children?:ReactChildren}) {
     return <Bar count={max}>
         {Array.from(Array(life), (_, i) => (
             <Unit key={i}><Heart fill={true} /></Unit>
