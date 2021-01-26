@@ -1,12 +1,16 @@
 # thisbounty.com
 
+## Core business
+
+Programming computers.
+
 ## What problem am I trying to solve?
 
-The hidden pitfalls of programming computers. Often the manual and marketing does not tell the full story. thisbounty.com offers a compelling software knowledge base to increase the amount of people who have "done it before."
+The hidden pitfalls of programming computers. Often the manual and marketing does not tell the full story. thisbounty.com offers a compelling software knowledge base to increase the amount of people in the world who have "done it before."
 
 ## Principles
 
-1. Done it before: Experience. Build an internal tools first. Product launch second.
+1. Done it before: Experience. First build internal tools. Then launch proven solutions as products to the market.
 2. No customs: Make it look like the manual as close as possible.
 3. Goals: Create, track with a strong and defined focus.
 4. Focus on the core business: How does it make money? How do I get paid? Finance markets are the wisest ones of us all.
@@ -49,63 +53,63 @@ A security nightmare. Easier to pay people regardless.
 
 ### Application of thisbounty.com
 
-1. Done it before: `Building internal tool first. Doing it now :)`
+1. Done it before: `Building internal tool first on my time and dime. Doing it now :)`
 2. No customs: `Threw my webrtc p2p graphql misadventure into the dumpster.`
 3. Create and track goals: `If this isn't built on 25th February, it's dead on 26th February`
-4. Focus on the core business: `Make money direct from clients. Building this knowlede base is their "done it before".`
+4. Focus on the core business: `Make money direct from clients. Building this knowledge base is their "done it before".`
 5. Build clear rules outside of the tech. `See Rules`
-6. List everything not core business. At least you are aware. `Doing it before. Eventually, a public facing app for users to commission work. Bounty scoring is going to be tough.`
-7. Fix bugs, add features: `Core business. Building experience`
+6. List everything not core business. At least you are aware. `Doing it before. Eventually, a public facing app for users to commission work. Bounty scoring is going to be tough. Hasura host. React frontend. FA icons. Custom knowledge base, goal setting, ...`
+7. Fix bugs, add features: `Bug: experience. Feature: core business knowledge base`
 8. No hot fixes: `Not live, no users`
-9. Use IDEs and version control instead of inner platforms. `Only platforms, no customs`
+9. Use IDEs and version control instead of inner platforms. `Only industry standard platforms, no customs`
 10. Users expect robust features: `Starting with name and health only`
 11. Either don't do it, or do it full effort. `Scrapped figma, diez, storybook, novel p2p graphql sourcing. Not afraid to scrap project. Keeping features minimal`
 12. Quick launch: `Launched with an excel sheet`
 13. Do not pay for advertising: `Finding clients`
 14. Walk away: `Left decentralization behind`
 
-### Rules:
+### Rules
 
-1. List all your computer programming skills. These will be called bounties.
-2. Set max life. Start with 3. Add 1 for each product launch.
-3. Set life, hurt on project roadblock. Subtract 1 for each problem.
-4. If life is zero, skill dies. Move one higher up, for instance if React dies, change to DOM.
-5. Add money, what you are willing to pay other people for work.
-6. Add users, usually you are a good judge of traffic, what current traffic is, and what it could before
-7. Add resources, available programmers, servers, source code, and references.
+1. Three strikes, and your bounty is out.
+2. What's a strike? Problem. Roadblock. Haven't done it before. Anything that delays launch.
+3. Launched something with it? Get an extra at-bat.
+4. If you're out, retry with a more basic approach. For instance, DOM instead of React, or API instead of GraphQL.
+5. Money, users, resources, links per discretion. People read them though.
 
-### Public app rules:
+### Navigation
 
-8. Add leads to bounties. Leads are specific tasks to do, work that needs to be done.
-9. Clicking lead filters bounties for that lead.
-10. Clicking bounty filters leads for that bounty.
-11. Clicking the "one up" lead removes filters
-12. Edit values through pgadmin
-13. New creates a bounty. Type in name.
-14. New with bounty selected creates a new lead. Lead name auto.
-15. Share asks community for activity.
-16. Bounties age off. No activity hurts.
-17. Sorts bounties per selected item, attribute, like health, name, users
-18. Search is from platform. Algolia. Filters bounties.
-19. Chat drops to Discord.
-20. Bomb shows dissastisfcation. Repeatitive clicks lead to easter eggs.
+1. Bounties can have leads, specific independent tasks. Click a bounty to see the leads.
+2. Leads can have bounties of their own. Click a lead to see the bounties.
+3. Escape back home by clicking the top bounty with the "one up" navigation symbol.
+4. Edit values through pgadmin until public release.
+
+### Public Release:
+
+1. Click "New" to create a new bounty. Type in name.
+2. Click bounty, then click "New" to create a lead.
+3. Bad bounties or leads strike out on their own. Move on. Leave your mistakes.
+4. Click "Share" to let other people know about your bounty.
+5. Click an attribute, then click "Sort" to sort bounties.
+6. Click "Search" to search bounties and leads by keyword.
+7. Chat drops to Discord.
+8. Bomb shows dissastisfcation. Repeatitive clicks lead to easter eggs.
 
 ### Goals
 
-| Goals                                                     | Timeline  | Progress tracking                              |
-| --------------------------------------------------------- | --------- | ---------------------------------------------- |
-| Get in the habit of doing things perfect, no shortcuts    | Daily     | Continuous                                     |
-| Focus to the point of subvocalize all actions             | Daily     | Continuous                                     |
-| Eliminate distractions. It happens, recogonize it move on | Daily     | Continuous                                     |
-| Avoid time sinks, paths to nowhere, fixations             | Daily     | Continuous                                     |
-| Fun, humble, solve a need                                 | Daily     | Continuous                                     |
-| Visualize before acting                                   | Daily     | Reflection                                     |
-| Experience, done it before, no surprises                  | Daily     | thisbounty.com                                 |
-| Abstraction, allow tolerance for surprises                | Daily     | Reflection                                     |
-| Reflection log mistakes                                   | Daily     | -                                              |
-| Build thisbounty.com                                      | One month | 26th January, no launch, dead on 26th February |
-| Get a client                                              | One month | 26th January, no client, dead on 26th February |
-| Follow up with past clients                               | One time  | Production                                     |
+| Goals                                                      | Timeline  | Progress tracking                              |
+| ---------------------------------------------------------- | --------- | ---------------------------------------------- |
+| Get in the habit of doing things perfect, no shortcuts     | Daily     | Continuous                                     |
+| Focus to the point of subvocalize all actions              | Daily     | Continuous                                     |
+| Eliminate distractions. It happens, recogonize it, move on | Daily     | Continuous                                     |
+| Avoid time sinks, paths to nowhere, fixations              | Daily     | Continuous                                     |
+| Fun, humble, solve a need                                  | Daily     | Continuous                                     |
+| Visualize before acting                                    | Daily     | Reflection                                     |
+| Experience, done it before, no surprises                   | Daily     | thisbounty.com                                 |
+| Abstraction, allow tolerance for surprises                 | Daily     | Reflection                                     |
+| Reflection, identify and acknowledge mistakes              | Daily     | -                                              |
+| Build thisbounty.com                                       | One month | 26th January, no launch, dead on 26th February |
+| Get a client                                               | One month | 26th January, no client, dead on 26th February |
+| Follow up with past clients                                | One time  | Production                                     |
 
 ---
 
