@@ -1,14 +1,21 @@
-.App {
-  text-align: center;
+ul {
+  list-style-type: none;
+  padding: 0;
 }
 
-.App-header {
+.App {
+  text-align: center;
   background-color: #343a40;
   min-height: 100vh;
   display: grid;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+.App-header {
+}
+
+main {
 }

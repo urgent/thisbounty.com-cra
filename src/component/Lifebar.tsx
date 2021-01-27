@@ -5,10 +5,8 @@ import styled from "styled-components";
 export const Bar = styled.ul`
     display: grid;
     grid-template-columns: ${ (props: {count?:number}) => Array.from(Array(props.count), (i) => '1fr').join(' ')};
-    list-style-type: none;
     grid-column-gap: 3px;
     justify-self: center;
-    padding:0;
 `
 
 export const Unit = styled.li`
