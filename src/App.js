@@ -367,7 +367,6 @@ function App() {
       <footer>
         <ul>
           <li><a href="https://github.com/urgent/thisbounty.com" style={{ color: "#fff" }}>readme.md</a></li>
-          <li><a href="https://docs.google.com/spreadsheets/d/1RSD6Kz04bKAGty_Z_gvSYc_Gu4QtAcTPTuvkK752mEw/edit?usp=sharing" style={{ color: "#fff" }}>Bounties</a></li>
         </ul>
       </footer>
     </div>
