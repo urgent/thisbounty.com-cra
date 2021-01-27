@@ -4,17 +4,16 @@ import styled from "styled-components";
 
 export const Bar = styled.ul`
     display: grid;
-    grid-template-columns: ${ (props: {count?:number}) => Array.from(Array(props.count), (i) => '1fr').join(' ')};
+    grid-template-columns: repeat(auto-fill,minmax(19px, 1fr));
     grid-column-gap: 3px;
-    justify-self: center;
 `
 
 export const Unit = styled.li`
-    display: inline;
+    
 `
 
 export function Lifebar({life, max, children}: {life:number, max:number, children?:ReactChildren}) {
-    return <Bar count={max}>
+    return <Bar>
         {Array.from(Array(life), (_, i) => (
             <Unit key={i}><Heart fill={true} /></Unit>
         ))}
