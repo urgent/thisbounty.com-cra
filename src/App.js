@@ -362,7 +362,7 @@ function App() {
     <div className="App">
       <header className="App-header"><a href="/">thisbounty.com</a></header>
       <main>
-        {bounties.map(bounty => <Bounty {...bounty} />)}
+        {bounties.map((bounty, i) => <Bounty {...bounty} key={i} />)}
       </main>
       <footer>
         <ul>
