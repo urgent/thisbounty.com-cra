@@ -15,10 +15,10 @@ export const Unit = styled.li`
 export function Lifebar({life, max, children}: {life:number, max:number, children?:ReactChildren}) {
     return <Bar>
         {Array.from(Array(life), (_, i) => (
-            <Unit key={i}><Heart fill={true} /></Unit>
+            <Unit key={i}><Heart fill={true} color="#F00" /></Unit>
         ))}
         {Array.from(Array(max - life), (_, i) => (
-            <Unit key={i}><Heart fill={true} /></Unit>
+            <Unit key={i}><Heart fill={false} color="#F00" /></Unit>
         ))}
         {children}
     </Bar>
