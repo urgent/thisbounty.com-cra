@@ -1,6 +1,6 @@
 import renderer from 'react-test-renderer';
 import React from 'react'
-import { Heart } from './Heart'
+import { Heart, process } from './Heart'
 
 test('Heart renders correctly', () => {
     const empty = renderer
@@ -12,3 +12,12 @@ test('Heart renders correctly', () => {
     expect(empty).toMatchSnapshot();
     expect(filled).toMatchSnapshot();
 });
+test('Process returns correct styles', () => {
+    const color = "#FFO";
+    const empty = process({ fill: false, color });
+    const filled = process({ fill: true, color });
+    expect(empty.stroke).toBe(color);
+    expect(empty.color).toBe("rgba(0,0,0,0)");
+    expect(filled.stroke).toBe("none");
+    expect(filled.color).toBe(color);
+})

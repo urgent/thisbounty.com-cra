@@ -2,7 +2,7 @@ import React, {ReactChildren} from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHeart } from '@fortawesome/free-solid-svg-icons/faHeart'
 
-function process({fill, color}:{fill?:boolean, color?:string}) {
+export function process({fill, color}:{fill?:boolean, color?:string}) {
     if(fill) {
         return {stroke:"none", color}
     } else {
