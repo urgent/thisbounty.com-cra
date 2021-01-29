@@ -1,9 +1,10 @@
 import React from 'react';
-import { render } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import App from './App';
 
-test('renders readme link', () => {
-  const { getByText } = render(<App />);
-  const linkElement = getByText(/readme.md/i);
-  expect(linkElement).toBeInTheDocument();
+test('renders typical elements', () => {
+  const { container } = render(<App />);
+  expect(screen.getByText(/readme.md/i)).toBeInTheDocument();
+  expect(container.querySelector('.heart')).toBeInTheDocument()
+  expect(container.querySelector('.lifebar')).toBeInTheDocument()
 });

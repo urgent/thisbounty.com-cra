@@ -2,15 +2,13 @@
 
 exports[`Lifebar renders correctly 1`] = `
 <ul
-  className="sc-bdfBwQ gGEbnI"
+  className="sc-bdfBwQ katrvI lifebar"
 >
-  <li
-    className="sc-gsTCUz RlZGc"
-  >
+  <li>
     <span>
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-heart fa-w-16 "
+        className="svg-inline--fa fa-heart fa-w-16 heart"
         data-icon="heart"
         data-prefix="fas"
         focusable="false"
@@ -33,13 +31,11 @@ exports[`Lifebar renders correctly 1`] = `
       </svg>
     </span>
   </li>
-  <li
-    className="sc-gsTCUz RlZGc"
-  >
+  <li>
     <span>
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-heart fa-w-16 "
+        className="svg-inline--fa fa-heart fa-w-16 heart"
         data-icon="heart"
         data-prefix="fas"
         focusable="false"
@@ -62,13 +58,11 @@ exports[`Lifebar renders correctly 1`] = `
       </svg>
     </span>
   </li>
-  <li
-    className="sc-gsTCUz RlZGc"
-  >
+  <li>
     <span>
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-heart fa-w-16 "
+        className="svg-inline--fa fa-heart fa-w-16 heart"
         data-icon="heart"
         data-prefix="fas"
         focusable="false"
@@ -96,15 +90,13 @@ exports[`Lifebar renders correctly 1`] = `
 
 exports[`Lifebar renders correctly 2`] = `
 <ul
-  className="sc-bdfBwQ gGEbnI"
+  className="sc-bdfBwQ katrvI lifebar"
 >
-  <li
-    className="sc-gsTCUz RlZGc"
-  >
+  <li>
     <span>
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-heart fa-w-16 "
+        className="svg-inline--fa fa-heart fa-w-16 heart"
         data-icon="heart"
         data-prefix="fas"
         focusable="false"
@@ -127,13 +119,11 @@ exports[`Lifebar renders correctly 2`] = `
       </svg>
     </span>
   </li>
-  <li
-    className="sc-gsTCUz RlZGc"
-  >
+  <li>
     <span>
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-heart fa-w-16 "
+        className="svg-inline--fa fa-heart fa-w-16 heart"
         data-icon="heart"
         data-prefix="fas"
         focusable="false"
@@ -156,13 +146,11 @@ exports[`Lifebar renders correctly 2`] = `
       </svg>
     </span>
   </li>
-  <li
-    className="sc-gsTCUz RlZGc"
-  >
+  <li>
     <span>
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-heart fa-w-16 "
+        className="svg-inline--fa fa-heart fa-w-16 heart"
         data-icon="heart"
         data-prefix="fas"
         focusable="false"
@@ -190,15 +178,13 @@ exports[`Lifebar renders correctly 2`] = `
 
 exports[`Lifebar renders correctly 3`] = `
 <ul
-  className="sc-bdfBwQ gGEbnI"
+  className="sc-bdfBwQ katrvI lifebar"
 >
-  <li
-    className="sc-gsTCUz RlZGc"
-  >
+  <li>
     <span>
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-heart fa-w-16 "
+        className="svg-inline--fa fa-heart fa-w-16 heart"
         data-icon="heart"
         data-prefix="fas"
         focusable="false"
@@ -221,13 +207,11 @@ exports[`Lifebar renders correctly 3`] = `
       </svg>
     </span>
   </li>
-  <li
-    className="sc-gsTCUz RlZGc"
-  >
+  <li>
     <span>
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-heart fa-w-16 "
+        className="svg-inline--fa fa-heart fa-w-16 heart"
         data-icon="heart"
         data-prefix="fas"
         focusable="false"
@@ -250,13 +234,11 @@ exports[`Lifebar renders correctly 3`] = `
       </svg>
     </span>
   </li>
-  <li
-    className="sc-gsTCUz RlZGc"
-  >
+  <li>
     <span>
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-heart fa-w-16 "
+        className="svg-inline--fa fa-heart fa-w-16 heart"
         data-icon="heart"
         data-prefix="fas"
         focusable="false"
@@ -284,15 +266,13 @@ exports[`Lifebar renders correctly 3`] = `
 
 exports[`Lifebar renders correctly 4`] = `
 <ul
-  className="sc-bdfBwQ gGEbnI"
+  className="sc-bdfBwQ katrvI lifebar"
 >
-  <li
-    className="sc-gsTCUz RlZGc"
-  >
+  <li>
     <span>
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-heart fa-w-16 "
+        className="svg-inline--fa fa-heart fa-w-16 heart"
         data-icon="heart"
         data-prefix="fas"
         focusable="false"
@@ -315,13 +295,11 @@ exports[`Lifebar renders correctly 4`] = `
       </svg>
     </span>
   </li>
-  <li
-    className="sc-gsTCUz RlZGc"
-  >
+  <li>
     <span>
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-heart fa-w-16 "
+        className="svg-inline--fa fa-heart fa-w-16 heart"
         data-icon="heart"
         data-prefix="fas"
         focusable="false"
@@ -344,13 +322,11 @@ exports[`Lifebar renders correctly 4`] = `
       </svg>
     </span>
   </li>
-  <li
-    className="sc-gsTCUz RlZGc"
-  >
+  <li>
     <span>
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-heart fa-w-16 "
+        className="svg-inline--fa fa-heart fa-w-16 heart"
         data-icon="heart"
         data-prefix="fas"
         focusable="false"
@@ -373,13 +349,11 @@ exports[`Lifebar renders correctly 4`] = `
       </svg>
     </span>
   </li>
-  <li
-    className="sc-gsTCUz RlZGc"
-  >
+  <li>
     <span>
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-heart fa-w-16 "
+        className="svg-inline--fa fa-heart fa-w-16 heart"
         data-icon="heart"
         data-prefix="fas"
         focusable="false"
@@ -402,13 +376,11 @@ exports[`Lifebar renders correctly 4`] = `
       </svg>
     </span>
   </li>
-  <li
-    className="sc-gsTCUz RlZGc"
-  >
+  <li>
     <span>
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-heart fa-w-16 "
+        className="svg-inline--fa fa-heart fa-w-16 heart"
         data-icon="heart"
         data-prefix="fas"
         focusable="false"
@@ -431,13 +403,11 @@ exports[`Lifebar renders correctly 4`] = `
       </svg>
     </span>
   </li>
-  <li
-    className="sc-gsTCUz RlZGc"
-  >
+  <li>
     <span>
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-heart fa-w-16 "
+        className="svg-inline--fa fa-heart fa-w-16 heart"
         data-icon="heart"
         data-prefix="fas"
         focusable="false"
@@ -460,13 +430,11 @@ exports[`Lifebar renders correctly 4`] = `
       </svg>
     </span>
   </li>
-  <li
-    className="sc-gsTCUz RlZGc"
-  >
+  <li>
     <span>
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-heart fa-w-16 "
+        className="svg-inline--fa fa-heart fa-w-16 heart"
         data-icon="heart"
         data-prefix="fas"
         focusable="false"
@@ -489,13 +457,11 @@ exports[`Lifebar renders correctly 4`] = `
       </svg>
     </span>
   </li>
-  <li
-    className="sc-gsTCUz RlZGc"
-  >
+  <li>
     <span>
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-heart fa-w-16 "
+        className="svg-inline--fa fa-heart fa-w-16 heart"
         data-icon="heart"
         data-prefix="fas"
         focusable="false"
@@ -518,13 +484,11 @@ exports[`Lifebar renders correctly 4`] = `
       </svg>
     </span>
   </li>
-  <li
-    className="sc-gsTCUz RlZGc"
-  >
+  <li>
     <span>
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-heart fa-w-16 "
+        className="svg-inline--fa fa-heart fa-w-16 heart"
         data-icon="heart"
         data-prefix="fas"
         focusable="false"
@@ -547,13 +511,11 @@ exports[`Lifebar renders correctly 4`] = `
       </svg>
     </span>
   </li>
-  <li
-    className="sc-gsTCUz RlZGc"
-  >
+  <li>
     <span>
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-heart fa-w-16 "
+        className="svg-inline--fa fa-heart fa-w-16 heart"
         data-icon="heart"
         data-prefix="fas"
         focusable="false"
@@ -581,15 +543,13 @@ exports[`Lifebar renders correctly 4`] = `
 
 exports[`Lifebar renders correctly 5`] = `
 <ul
-  className="sc-bdfBwQ gGEbnI"
+  className="sc-bdfBwQ katrvI lifebar"
 >
-  <li
-    className="sc-gsTCUz RlZGc"
-  >
+  <li>
     <span>
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-heart fa-w-16 "
+        className="svg-inline--fa fa-heart fa-w-16 heart"
         data-icon="heart"
         data-prefix="fas"
         focusable="false"
@@ -612,13 +572,11 @@ exports[`Lifebar renders correctly 5`] = `
       </svg>
     </span>
   </li>
-  <li
-    className="sc-gsTCUz RlZGc"
-  >
+  <li>
     <span>
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-heart fa-w-16 "
+        className="svg-inline--fa fa-heart fa-w-16 heart"
         data-icon="heart"
         data-prefix="fas"
         focusable="false"
@@ -641,13 +599,11 @@ exports[`Lifebar renders correctly 5`] = `
       </svg>
     </span>
   </li>
-  <li
-    className="sc-gsTCUz RlZGc"
-  >
+  <li>
     <span>
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-heart fa-w-16 "
+        className="svg-inline--fa fa-heart fa-w-16 heart"
         data-icon="heart"
         data-prefix="fas"
         focusable="false"
@@ -670,13 +626,11 @@ exports[`Lifebar renders correctly 5`] = `
       </svg>
     </span>
   </li>
-  <li
-    className="sc-gsTCUz RlZGc"
-  >
+  <li>
     <span>
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-heart fa-w-16 "
+        className="svg-inline--fa fa-heart fa-w-16 heart"
         data-icon="heart"
         data-prefix="fas"
         focusable="false"
@@ -699,13 +653,11 @@ exports[`Lifebar renders correctly 5`] = `
       </svg>
     </span>
   </li>
-  <li
-    className="sc-gsTCUz RlZGc"
-  >
+  <li>
     <span>
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-heart fa-w-16 "
+        className="svg-inline--fa fa-heart fa-w-16 heart"
         data-icon="heart"
         data-prefix="fas"
         focusable="false"
@@ -728,13 +680,11 @@ exports[`Lifebar renders correctly 5`] = `
       </svg>
     </span>
   </li>
-  <li
-    className="sc-gsTCUz RlZGc"
-  >
+  <li>
     <span>
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-heart fa-w-16 "
+        className="svg-inline--fa fa-heart fa-w-16 heart"
         data-icon="heart"
         data-prefix="fas"
         focusable="false"
@@ -757,13 +707,11 @@ exports[`Lifebar renders correctly 5`] = `
       </svg>
     </span>
   </li>
-  <li
-    className="sc-gsTCUz RlZGc"
-  >
+  <li>
     <span>
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-heart fa-w-16 "
+        className="svg-inline--fa fa-heart fa-w-16 heart"
         data-icon="heart"
         data-prefix="fas"
         focusable="false"
@@ -786,13 +734,11 @@ exports[`Lifebar renders correctly 5`] = `
       </svg>
     </span>
   </li>
-  <li
-    className="sc-gsTCUz RlZGc"
-  >
+  <li>
     <span>
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-heart fa-w-16 "
+        className="svg-inline--fa fa-heart fa-w-16 heart"
         data-icon="heart"
         data-prefix="fas"
         focusable="false"
@@ -815,13 +761,11 @@ exports[`Lifebar renders correctly 5`] = `
       </svg>
     </span>
   </li>
-  <li
-    className="sc-gsTCUz RlZGc"
-  >
+  <li>
     <span>
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-heart fa-w-16 "
+        className="svg-inline--fa fa-heart fa-w-16 heart"
         data-icon="heart"
         data-prefix="fas"
         focusable="false"
@@ -844,13 +788,11 @@ exports[`Lifebar renders correctly 5`] = `
       </svg>
     </span>
   </li>
-  <li
-    className="sc-gsTCUz RlZGc"
-  >
+  <li>
     <span>
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-heart fa-w-16 "
+        className="svg-inline--fa fa-heart fa-w-16 heart"
         data-icon="heart"
         data-prefix="fas"
         focusable="false"
