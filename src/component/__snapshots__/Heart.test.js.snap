@@ -4,7 +4,7 @@ exports[`Heart renders correctly 1`] = `
 <span>
   <svg
     aria-hidden="true"
-    className="svg-inline--fa fa-heart fa-w-16 heart"
+    className="svg-inline--fa fa-heart fa-w-16 sc-bdfBwQ jUwrrZ heart"
     data-icon="heart"
     data-prefix="fas"
     focusable="false"
@@ -13,7 +13,6 @@ exports[`Heart renders correctly 1`] = `
       Object {
         "color": "rgba(0,0,0,0)",
         "stroke": "#F00",
-        "strokeWidth": 50,
       }
     }
     viewBox="0 0 512 512"
@@ -32,7 +31,7 @@ exports[`Heart renders correctly 2`] = `
 <span>
   <svg
     aria-hidden="true"
-    className="svg-inline--fa fa-heart fa-w-16 heart"
+    className="svg-inline--fa fa-heart fa-w-16 sc-bdfBwQ jUwrrZ heart"
     data-icon="heart"
     data-prefix="fas"
     focusable="false"
@@ -41,7 +40,6 @@ exports[`Heart renders correctly 2`] = `
       Object {
         "color": "#F00",
         "stroke": "none",
-        "strokeWidth": 50,
       }
     }
     viewBox="0 0 512 512"

@@ -7,4 +7,5 @@ test('renders typical elements', () => {
   expect(screen.getByText(/readme.md/i)).toBeInTheDocument();
   expect(container.querySelector('.heart')).toBeInTheDocument()
   expect(container.querySelector('.lifebar')).toBeInTheDocument()
+  expect(container.querySelector('.bounty')).toBeInTheDocument()
 });

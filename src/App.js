@@ -1,6 +1,15 @@
 import React from 'react';
 import { Bounty } from './component/Bounty'
 import './App.css';
+import styled from 'styled-components'
+
+const TitleBar = styled.header`
+  margin:20px 0;
+
+  a {
+    color: #FFF;
+  }
+`
 
 const bounties = [
   {
@@ -181,7 +190,7 @@ const bounties = [
   },
   {
     id: 11,
-    title: 'Get in the habit of doing things perfect, no shortcuts',
+    title: 'Habit for perfect, no shortcuts',
     life: 3,
     lifeMax: 3,
     money: 0,
@@ -213,7 +222,7 @@ const bounties = [
   },
   {
     id: 13,
-    title: 'Eliminate distractions. It happens, recogonize it move on',
+    title: 'Eliminate distractions. Admit. Move on',
     life: 2,
     lifeMax: 3,
     money: 0,
@@ -360,7 +369,7 @@ const bounties = [
 function App() {
   return (
     <div className="App">
-      <header className="App-header"><a href="/">thisbounty.com</a></header>
+      <TitleBar><a href="/">thisbounty.com</a></TitleBar>
       <main>
         {bounties.map((bounty, i) => <Bounty {...bounty} key={i} />)}
       </main>

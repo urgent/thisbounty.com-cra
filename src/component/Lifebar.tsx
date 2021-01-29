@@ -4,8 +4,9 @@ import styled from 'styled-components'
 
 export const Bar = styled.ul`
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(calc(10px + 2vmin), 1fr));
-  grid-column-gap: 3px;
+  grid-template-columns: repeat(auto-fill, minmax(15px, 1fr));
+  grid-column-gap: 2px;
+  margin-top: 0;
 `
 
 export function Lifebar ({

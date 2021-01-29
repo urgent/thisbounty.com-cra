@@ -1,6 +1,12 @@
 import React, { ReactChildren } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHeart } from '@fortawesome/free-solid-svg-icons/faHeart'
+import styled from 'styled-components'
+
+const Icon = styled(FontAwesomeIcon)`
+  strokewidth: 50;
+  font-size: 1rem;
+`
 
 export function process ({ fill, color }: { fill?: boolean; color?: string }) {
   if (fill) {
@@ -21,10 +27,10 @@ export function Heart ({
 }) {
   return (
     <span>
-      <FontAwesomeIcon
+      <Icon
         className='heart'
         icon={faHeart}
-        style={{ strokeWidth: 50, ...process({ fill, color }) }}
+        style={{ ...process({ fill, color }) }}
       />
       {children}
     </span>
