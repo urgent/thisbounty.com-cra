@@ -37,6 +37,7 @@ const Card = styled.div`
     display: grid;
     grid-template-rows: [title] 1fr [life] 1fr [money] 1fr [user] 1fr [programmer] 2fr [icons] 2fr;
     height: 184px;
+    padding: 5px 5px 0px 0px;
   }
 
   .gutter {
@@ -45,12 +46,12 @@ const Card = styled.div`
 
   .lifebar {
     grid-row: life;
-    margin-left: 8px;
+    margin-left: 5px;
   }
 
   .money {
     grid-row: money;
-    margin-left: 4px;
+    margin-left: 5px;
   }
 
   .programmer {
@@ -76,7 +77,7 @@ const Card = styled.div`
 `
 
 const TitleBar = styled.div`
-  margin-left: 8px;
+  margin-left: 5px;
   grid-row: title;
   display: grid;
   grid-template-columns: [header] 5fr [id] 1fr;
@@ -104,6 +105,7 @@ type Attributes = {
   title: string
   life: number
   lifeMax: number
+  lifeEnhance: boolean
   money: number
   moneyMax: number
   users: number
@@ -122,6 +124,7 @@ export function Bounty ({
   title,
   life,
   lifeMax,
+  lifeEnhance,
   money,
   moneyMax,
   users,
@@ -140,7 +143,7 @@ export function Bounty ({
         <TitleBar>
           <h2>{title}</h2>
         </TitleBar>
-        <Lifebar life={life} max={lifeMax} />
+        <Lifebar life={life} max={lifeMax} enhance={lifeEnhance} />
         {children}
       </div>
     </Card>

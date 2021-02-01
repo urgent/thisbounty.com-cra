@@ -4,25 +4,40 @@ import { faHeart } from '@fortawesome/free-solid-svg-icons/faHeart'
 import styled from 'styled-components'
 
 const Icon = styled(FontAwesomeIcon)`
-  strokewidth: 50;
-  font-size: 1rem;
+  stroke-width: 50;
+  font-size: 0.95rem;
 `
 
-export function process ({ fill, color }: { fill?: boolean; color?: string }) {
+export function process ({
+  fill,
+  color,
+  enhance
+}: {
+  fill?: boolean
+  color?: string
+  enhance?: boolean
+}) {
+  let props = {}
   if (fill) {
-    return { stroke: 'none', color }
+    props = { stroke: 'none', color }
   } else {
-    return { stroke: color, color: 'rgba(0,0,0,0)' }
+    props = { stroke: color, color: 'rgba(0,0,0,0)' }
   }
+  if (enhance) {
+    props = { ...props, stroke: '#FFF' }
+  }
+  return props
 }
 
 export function Heart ({
   fill,
   color,
+  enhance,
   children
 }: {
   fill?: boolean
   color?: string
+  enhance?: boolean
   children?: ReactChildren
 }) {
   return (
@@ -30,7 +45,7 @@ export function Heart ({
       <Icon
         className='heart'
         icon={faHeart}
-        style={{ ...process({ fill, color }) }}
+        style={{ ...process({ fill, color, enhance }) }}
       />
       {children}
     </span>

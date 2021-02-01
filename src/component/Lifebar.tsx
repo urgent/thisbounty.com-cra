@@ -4,30 +4,32 @@ import styled from 'styled-components'
 
 export const Bar = styled.ul`
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(15px, 1fr));
-  grid-column-gap: 2px;
+  grid-template-columns: repeat(auto-fill, minmax(12px, 1fr));
+  grid-column-gap: 3px;
   margin-top: 0;
 `
 
 export function Lifebar ({
   life,
   max,
+  enhance,
   children
 }: {
   life: number
   max: number
+  enhance?: boolean
   children?: ReactChildren
 }) {
   return (
     <Bar className='lifebar'>
       {Array.from(Array(life), (_, i) => (
         <li key={i}>
-          <Heart fill={true} color='#F00' />
+          <Heart fill={true} color='#F00' enhance={enhance} />
         </li>
       ))}
       {Array.from(Array(max - life), (_, i) => (
         <li key={i}>
-          <Heart fill={false} color='#F00' />
+          <Heart fill={false} color='#F00' enhance={enhance} />
         </li>
       ))}
       {children}

@@ -17,6 +17,7 @@ const bounties = [
     title: 'Principles',
     life: 10,
     lifeMax: 10,
+    lifeEnhance: true,
     money: 3,
     moneyMax: 3,
     users: 1,
