@@ -6,14 +6,25 @@ const Card = styled.div`
   display: grid;
   grid-template-columns: [image] 2fr [stats] 3fr;
   width: 320px;
-  background-color: $thisbounty-com-style-guide-colors-primary;
+  height: 192px;
+  background-color: #212529;
   color: #fff;
   margin: 0 auto;
-  box-shadow: $thisbounty-com-style-guide-shadows-render;
+  box-shadow: 7px 7px 10px 0px rgb(0 0 0 / 50%);
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border: 4px solid rgba(50, 50, 50, 0.1);
+
+  .shadow {
+    position: absolute;
+    width: 320px;
+    height: 192px;
+    box-shadow: inset 7px 7px 16px 3px rgb(0 0 0 / 67%);
+  }
 
   > img {
     grid-column: image;
-    width: 128px;
+    width: 157px;
     height: 192px;
     &.center {
       background: black;
@@ -123,6 +134,8 @@ export function Bounty ({
 }: Attributes) {
   return (
     <Card className='bounty'>
+      <div className='shadow' />
+      <img src='/playing_cards/King of Hearts.png' alt='King of Hearts' />
       <div className='stats'>
         <TitleBar>
           <h2>{title}</h2>
