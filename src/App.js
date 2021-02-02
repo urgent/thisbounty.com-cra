@@ -15,6 +15,8 @@ const bounties = [
   {
     id: 1,
     title: 'Principles',
+    image: '/playing_cards/King of Hearts.png',
+    imageAlt: 'King of Hearts, Cropped',
     life: 10,
     lifeMax: 10,
     lifeEnhance: true,
@@ -32,6 +34,8 @@ const bounties = [
   {
     id: 2,
     title: 'Goals',
+    image: 'flags/Blackbeard.png',
+    imageAlt: 'Flag of Blackbeard, Cropped',
     life: 10,
     lifeMax: 10,
     money: 3,

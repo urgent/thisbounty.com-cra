@@ -17,7 +17,7 @@ const Card = styled.div`
 
   .shadow {
     position: absolute;
-    width: 182px;
+    width: 157px;
     height: 192px;
     box-shadow: inset 7px 7px 16px 3px rgb(0 0 0 / 67%);
   }
@@ -103,6 +103,8 @@ const TitleBar = styled.div`
 type Attributes = {
   id: number
   title: string
+  image: string
+  imageAlt: string
   life: number
   lifeMax: number
   lifeEnhance: boolean
@@ -122,6 +124,8 @@ type Attributes = {
 export function Bounty ({
   id,
   title,
+  image,
+  imageAlt,
   life,
   lifeMax,
   lifeEnhance,
@@ -138,7 +142,7 @@ export function Bounty ({
   return (
     <Card className='bounty'>
       <div className='shadow' />
-      <img src='/playing_cards/King of Hearts.png' alt='King of Hearts' />
+      <img src={image} alt={imageAlt} />
       <div className='stats'>
         <TitleBar>
           <h2>{title}</h2>

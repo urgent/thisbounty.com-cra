@@ -2,26 +2,30 @@
 
 exports[`Bounty renders correctly 1`] = `
 <div
-  className="sc-dlfnbm gSBccC bounty"
+  className="sc-dlfnbm hDGGtG bounty"
 >
+  <div
+    className="shadow"
+  />
+  <img />
   <div
     className="stats"
   >
     <div
-      className="sc-hKgILt iAYa-dV"
+      className="sc-hKgILt iYuasE"
     >
       <h2>
         Get a client
       </h2>
     </div>
     <ul
-      className="sc-gsTCUz fCEmJu lifebar"
+      className="sc-gsTCUz kZtsAU lifebar"
     >
       <li>
         <span>
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-heart fa-w-16 sc-bdfBwQ jUwrrZ heart"
+            className="svg-inline--fa fa-heart fa-w-16 sc-bdfBwQ jyRKPL heart"
             data-icon="heart"
             data-prefix="fas"
             focusable="false"
@@ -47,7 +51,7 @@ exports[`Bounty renders correctly 1`] = `
         <span>
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-heart fa-w-16 sc-bdfBwQ jUwrrZ heart"
+            className="svg-inline--fa fa-heart fa-w-16 sc-bdfBwQ jyRKPL heart"
             data-icon="heart"
             data-prefix="fas"
             focusable="false"
@@ -73,7 +77,7 @@ exports[`Bounty renders correctly 1`] = `
         <span>
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-heart fa-w-16 sc-bdfBwQ jUwrrZ heart"
+            className="svg-inline--fa fa-heart fa-w-16 sc-bdfBwQ jyRKPL heart"
             data-icon="heart"
             data-prefix="fas"
             focusable="false"
