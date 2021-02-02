@@ -1,5 +1,6 @@
 import React, { ReactChildren } from 'react'
 import { Lifebar } from './Lifebar'
+import { Moneybar } from './Moneybar'
 import styled from 'styled-components'
 
 const Card = styled.div`
@@ -148,6 +149,7 @@ export function Bounty ({
           <h2>{title}</h2>
         </TitleBar>
         <Lifebar life={life} max={lifeMax} enhance={lifeEnhance} />
+        <Moneybar money={money} max={moneyMax} />
         {children}
       </div>
     </Card>
