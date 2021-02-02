@@ -21,12 +21,14 @@ const Card = styled.div`
     width: 157px;
     height: 192px;
     box-shadow: inset 7px 7px 16px 3px rgb(0 0 0 / 67%);
+    border-radius: 10px 0 0 10px;
   }
 
   > img {
     grid-column: image;
     width: 157px;
     height: 192px;
+    border-radius: 10px 0 0 10px;
     &.center {
       background: black;
       display: flex;
