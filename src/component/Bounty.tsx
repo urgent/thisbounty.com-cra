@@ -17,7 +17,7 @@ const Card = styled.div`
 
   .shadow {
     position: absolute;
-    width: 320px;
+    width: 182px;
     height: 192px;
     box-shadow: inset 7px 7px 16px 3px rgb(0 0 0 / 67%);
   }
