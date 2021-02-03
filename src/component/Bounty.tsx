@@ -1,6 +1,7 @@
 import React, { ReactChildren } from 'react'
 import { Lifebar } from './Lifebar'
 import { Moneybar } from './Moneybar'
+import { Userbar } from './Userbar'
 import styled from 'styled-components'
 
 const Card = styled.div`
@@ -114,6 +115,7 @@ type Attributes = {
   money: number
   moneyMax: number
   users: number
+  usersMax: number
   programmers: number
   servers: number
   sourceCode: number
@@ -135,6 +137,7 @@ export function Bounty ({
   money,
   moneyMax,
   users,
+  usersMax,
   programmers,
   servers,
   sourceCode,
@@ -152,6 +155,7 @@ export function Bounty ({
         </TitleBar>
         <Lifebar life={life} max={lifeMax} enhance={lifeEnhance} />
         <Moneybar money={money} max={moneyMax} />
+        <Userbar users={users} max={usersMax} />
         {children}
       </div>
     </Card>

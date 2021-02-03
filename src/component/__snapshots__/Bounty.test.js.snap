@@ -2,7 +2,7 @@
 
 exports[`Bounty renders correctly 1`] = `
 <div
-  className="sc-hKgILt fMkHGw bounty"
+  className="sc-gKsewC ibyEsv bounty"
 >
   <div
     className="shadow"
@@ -12,7 +12,7 @@ exports[`Bounty renders correctly 1`] = `
     className="stats"
   >
     <div
-      className="sc-eCssSg eJTGEj"
+      className="sc-iBPRYJ kprbaz"
     >
       <h2>
         Get a client
@@ -230,6 +230,94 @@ exports[`Bounty renders correctly 1`] = `
         />
       </defs>
     </svg>
+    <div
+      className="sc-hKgILt ehmWwV"
+    >
+      <svg
+        aria-hidden="true"
+        className="svg-inline--fa fa-user fa-w-14 sc-eCssSg iyxjrl"
+        data-icon="user"
+        data-prefix="fas"
+        focusable="false"
+        role="img"
+        style={Object {}}
+        viewBox="0 0 448 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"
+          fill="currentColor"
+          style={Object {}}
+        />
+      </svg>
+      <svg
+        className="sc-jSgupP gNtTBT sc-hKgILt kWdQcq"
+        fill="none"
+        height="37"
+        id="svg131"
+        version="1.1"
+        viewBox="0 0 180 37"
+        width="170"
+      >
+        <g
+          clip-path="url(#clip0)"
+          id="g121"
+          transform="translate(-12,-13.088235)"
+        >
+          <g
+            id="g119"
+          >
+            <path
+              d="m 14,14 h NaN c 5.059,-0.106 4.081,8.083 -0.793,7 H 14 Z"
+              fill="url(#paint1_linear)"
+              id="path115"
+              style={
+                Object {
+                  "fill": "url(#paint1_linear)",
+                }
+              }
+            />
+            <path
+              d="m 14,13 h -1 v 9 h NaN a 4.5,4.5 0 0 0 0,-9 z"
+              id="path117"
+              stroke="#ffffff"
+              stroke-width="2"
+            />
+          </g>
+        </g>
+        <defs
+          id="defs935"
+        >
+          <linearGradient
+            gradientUnits="userSpaceOnUse"
+            id="paint1_linear"
+            x1="14"
+            x2="178"
+            y1="21"
+            y2="21"
+          >
+            <stop
+              id="stop927"
+              stop-color="#0000FF"
+            />
+            <stop
+              id="stop929"
+              offset="1"
+              stop-color="#3377FF"
+            />
+          </linearGradient>
+          <clipPath
+            id="clip0"
+          >
+            <path
+              d="M0 0h188v37H0V0z"
+              fill="#fff"
+              id="path932"
+            />
+          </clipPath>
+        </defs>
+      </svg>
+    </div>
   </div>
 </div>
 `;
