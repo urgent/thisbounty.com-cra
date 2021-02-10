@@ -72,7 +72,7 @@ Security nightmare. Easier to pay people.
 ## Rules
 
 1. Growth: 5 new bids prior to work on thisbounty.com
-2. No surprises: Work for free before agreeing to terms
+2. No surprises: Work for free before agreeing to terms. State that in bid to increase conversions.
 3. Time: Keep an itinerary before work
 4. Track: At close, reflect on each workday
 5. Plan: After reflection, visualize next workday

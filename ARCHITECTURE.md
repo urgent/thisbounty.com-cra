@@ -14,7 +14,7 @@
 1. Docker
 2. Google Cloud, Compute Engine Free Tier
 
-# Platforms
+## Platforms
 
 1. Hasura free tier
 2. Postgres on Heroku
