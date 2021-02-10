@@ -1,12 +1,17 @@
 import React, { ReactChildren } from 'react'
+import styled from 'styled-components'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-
 import {
   faUsersCog,
   faServer,
   faFileCode,
   faBook
 } from '@fortawesome/free-solid-svg-icons'
+
+const Icon = styled(FontAwesomeIcon)`
+  color: #ccc;
+  font-size: 1rem;
+`
 
 type Resource = 'programmers' | 'servers' | 'scripts' | 'libraries'
 
@@ -34,7 +39,7 @@ export function Resource ({
 }) {
   return (
     <div>
-      <FontAwesomeIcon icon={lookup(icon)}></FontAwesomeIcon> x {String(count)}
+      <Icon icon={lookup(icon)}></Icon> x {String(count)}
       {children}
     </div>
   )

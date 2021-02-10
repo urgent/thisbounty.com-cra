@@ -2,6 +2,7 @@
 
 exports[`Link renders correctly 1`] = `
 <a
+  className="sc-bdfBwQ exIDoE"
   href="#"
 >
   <svg

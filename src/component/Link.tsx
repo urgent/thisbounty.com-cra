@@ -1,4 +1,5 @@
 import React, { ReactChildren } from 'react'
+import styled from 'styled-components'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faGithub,
@@ -8,6 +9,19 @@ import {
   faFigma
 } from '@fortawesome/free-brands-svg-icons'
 import { faComments, faLink } from '@fortawesome/free-solid-svg-icons'
+
+const Anchor = styled.a`
+  color: #fff;
+  margin: 0 3px;
+
+  svg {
+    padding-bottom: 3px;
+  }
+
+  svg:hover {
+    border-bottom: 1px solid #fff;
+  }
+`
 
 function lookup (icon: String) {
   switch (icon) {
@@ -38,9 +52,9 @@ export function Link ({
   children?: ReactChildren
 }) {
   return (
-    <a href={href}>
+    <Anchor href={href}>
       <FontAwesomeIcon icon={lookup(icon)} />
       {children}
-    </a>
+    </Anchor>
   )
 }

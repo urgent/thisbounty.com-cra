@@ -111,11 +111,6 @@ const ResourceBar = styled.div`
   width: 170px;
   font-size: 0.8rem;
   justify-content: space-evenly;
-
-  svg {
-    color: #ccc;
-    font-size: 1rem;
-  }
 `
 
 const LinkBar = styled.div`
@@ -123,19 +118,6 @@ const LinkBar = styled.div`
   width: 170px;
   font-size: 1rem;
   margin-left: 5px;
-
-  a {
-    color: #fff;
-    margin: 0 3px;
-  }
-
-  svg {
-    padding-bottom: 3px;
-  }
-
-  svg:hover {
-    border-bottom: 1px solid #fff;
-  }
 `
 
 type Attributes = {
