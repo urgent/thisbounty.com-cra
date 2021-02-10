@@ -4,10 +4,10 @@ import { Resource } from './Resource'
 
 test('Resource renders correctly', () => {
     const empty = renderer
-        .create(<Resource fill={false} color="#F00" />)
+        .create(<Resource icon="programmers" count={0} />)
         .toJSON();
     const filled = renderer
-        .create(<Resource fill={true} color="#F00" />)
+        .create(<Resource icon="scripts" count={99} />)
         .toJSON();
     expect(empty).toMatchSnapshot();
     expect(filled).toMatchSnapshot();
