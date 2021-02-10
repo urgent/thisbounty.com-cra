@@ -11,13 +11,13 @@
 
 ## Server
 
-1. Postgres
-2. Hasura
-3. Traefik
-4. Souin
-5. Redis
-6. Docker
-7. Google Cloud, Compute Engine Free Tier
+1. Docker
+2. Google Cloud, Compute Engine Free Tier
+
+# Platforms
+
+1. Hasura free tier
+2. Postgres on Heroku
 
 ## Data
 
@@ -57,3 +57,4 @@ To turn into something profitable, something that converts, need a call to actio
 Perhaps that bomb icon button on the bottom, that pops up.
 Answers a serious of questions for a new project. If you agree on principles, define goals.
 Also needs something that runs itself. Not just leads going to email. But that's a lot of work.
+Deploy like Hasura does. OAuth customer's account. Launch resources there, netlify, github, google cloud, heroku, aws ...

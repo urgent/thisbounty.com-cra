@@ -6,7 +6,9 @@ Programming computers.
 
 ## What problem am I trying to solve?
 
-Build experience for future clients. "done it before" dashboard
+Computer programming experience. "done it before". Take an entire project from start to finish, so there are no surprises when working for future clients.
+
+Personal workspace. Frontend, server, build, platforms. Test leading technology. Ready to go setup to reduce provisioning for future clients.
 
 ## Principles
 
@@ -26,7 +28,7 @@ Build experience for future clients. "done it before" dashboard
 
 ## User Persona
 
-Software programmers who work an hour or two a day.
+Computer programmers who need experience.
 
 ## What problems am I not trying to solve, and why?
 
@@ -82,7 +84,7 @@ Security nightmare. Easier to pay people.
 1. Suits on left, leads on right.
 2. Suits -> Bounty -> Leads, parent child relations
 3. Leads have bounties of their own, to suggest a workflow.
-4. Edit values through pgadmin until public release.
+4. Edit values through hasura until public release.
 
 ## Public Release
 
