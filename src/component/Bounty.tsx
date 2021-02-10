@@ -3,6 +3,7 @@ import { Lifebar } from './Lifebar'
 import { Moneybar } from './Moneybar'
 import { Userbar } from './Userbar'
 import { Resource } from './Resource'
+import { Link } from './Link'
 import styled from 'styled-components'
 
 const Card = styled.div`
@@ -117,6 +118,26 @@ const ResourceBar = styled.div`
   }
 `
 
+const LinkBar = styled.div`
+  display: flex;
+  width: 170px;
+  font-size: 1rem;
+  margin-left: 5px;
+
+  a {
+    color: #fff;
+    margin: 0 3px;
+  }
+
+  svg {
+    padding-bottom: 3px;
+  }
+
+  svg:hover {
+    border-bottom: 1px solid #fff;
+  }
+`
+
 type Attributes = {
   id: number
   title: string
@@ -133,9 +154,9 @@ type Attributes = {
   servers: number
   scripts: number
   libraries: number
-  tags: String[]
-  tagLinks: String[]
-  hurtLog?: String[]
+  tags: string[]
+  tagLinks: string[]
+  hurtLog?: string[]
   children?: ReactChildren
 }
 
@@ -155,6 +176,8 @@ export function Bounty ({
   servers,
   scripts,
   libraries,
+  tags,
+  tagLinks,
   hurtLog,
   children
 }: Attributes) {
@@ -175,6 +198,11 @@ export function Bounty ({
           <Resource icon='scripts' count={scripts} />
           <Resource icon='libraries' count={libraries} />
         </ResourceBar>
+        <LinkBar>
+          {tags.map((tag, index) => (
+            <Link icon={tag} href={tagLinks[index]} />
+          ))}
+        </LinkBar>
         {children}
       </div>
     </Card>

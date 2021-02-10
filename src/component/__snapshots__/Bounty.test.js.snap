@@ -406,6 +406,9 @@ exports[`Bounty renders correctly 1`] = `
         undefined
       </div>
     </div>
+    <div
+      className="sc-pFZIQ grhoGR"
+    />
   </div>
 </div>
 `;
