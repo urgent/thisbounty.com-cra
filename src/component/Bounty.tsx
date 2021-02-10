@@ -15,10 +15,8 @@ const Card = styled.div`
   background-color: #212529;
   color: #fff;
   margin: 0 auto;
-  box-shadow: 7px 7px 10px 0px rgb(0 0 0 / 50%);
   margin-bottom: 20px;
   border-radius: 10px;
-  border: 4px solid rgba(50, 50, 50, 0.1);
 
   .shadow {
     position: absolute;
@@ -32,7 +30,7 @@ const Card = styled.div`
     grid-column: image;
     width: 157px;
     height: 192px;
-    border-radius: 10px 0 0 10px;
+    border-radius: 0 0 0 10px;
     &.center {
       background: black;
       display: flex;

@@ -13,6 +13,8 @@ import { faComments, faLink } from '@fortawesome/free-solid-svg-icons'
 const Anchor = styled.a`
   color: #fff;
   margin: 0 3px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0);
+  line-height: 2rem;
 
   svg {
     padding-bottom: 3px;

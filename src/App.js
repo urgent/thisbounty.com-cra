@@ -3,8 +3,34 @@ import { Bounty } from './component/Bounty'
 import './App.css';
 import styled from 'styled-components'
 
+const Flag = styled.div`
+  text-align: center;
+  background-color: #343a40;
+  min-height: 100vh;
+  display: grid;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  grid-template-rows: [titlebar] 2rem [app] 1fr;
+  grid-template-columns: 1fr;
+`
+
+const Main = styled.main`
+  background: #212529;
+  width: 320px;
+  justify-self: center;
+  margin-top:1rem;
+  
+`
+
 const TitleBar = styled.header`
-  margin:20px 0;
+  margin:0;
+  background: #212529;
+  grid-row: titlebar;
+  width: 100%;
+  font-size:0.8rem;
+  padding: .5rem 0 0 1rem;
+  text-align:left;
 
   a {
     color: #FFF;
@@ -395,17 +421,17 @@ const bounties = [
 
 function App() {
   return (
-    <div className="App">
+    <Flag>
       <TitleBar><a href="/">thisbounty.com</a></TitleBar>
-      <main>
+      <Main>
         {bounties.map((bounty, i) => <Bounty {...bounty} key={i} />)}
-      </main>
+      </Main>
       <footer>
         <ul>
           <li><a href="https://github.com/urgent/thisbounty.com" style={{ color: "#fff" }}>readme.md</a></li>
         </ul>
       </footer>
-    </div>
+    </Flag>
   );
 }
 
