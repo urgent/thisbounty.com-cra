@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Resource renders correctly 1`] = `
+<div>
+   x 
+  undefined
+</div>
+`;
+
+exports[`Resource renders correctly 2`] = `
+<div>
+   x 
+  undefined
+</div>
+`;

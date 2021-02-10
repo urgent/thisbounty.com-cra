@@ -2,6 +2,7 @@ import React, { ReactChildren } from 'react'
 import { Lifebar } from './Lifebar'
 import { Moneybar } from './Moneybar'
 import { Userbar } from './Userbar'
+import { Resource } from './Resource'
 import styled from 'styled-components'
 
 const Card = styled.div`
@@ -104,6 +105,18 @@ const TitleBar = styled.div`
   }
 `
 
+const ResourceBar = styled.div`
+  display: flex;
+  width: 170px;
+  font-size: 0.8rem;
+  justify-content: space-evenly;
+
+  svg {
+    color: #ccc;
+    font-size: 1rem;
+  }
+`
+
 type Attributes = {
   id: number
   title: string
@@ -118,8 +131,8 @@ type Attributes = {
   usersMax: number
   programmers: number
   servers: number
-  sourceCode: number
-  references: number
+  scripts: number
+  libraries: number
   tags: String[]
   tagLinks: String[]
   hurtLog?: String[]
@@ -140,8 +153,8 @@ export function Bounty ({
   usersMax,
   programmers,
   servers,
-  sourceCode,
-  references,
+  scripts,
+  libraries,
   hurtLog,
   children
 }: Attributes) {
@@ -156,6 +169,12 @@ export function Bounty ({
         <Lifebar life={life} max={lifeMax} enhance={lifeEnhance} />
         <Moneybar money={money} max={moneyMax} />
         <Userbar users={users} max={usersMax} />
+        <ResourceBar>
+          <Resource icon='programmers' count={programmers} />
+          <Resource icon='servers' count={servers} />
+          <Resource icon='scripts' count={scripts} />
+          <Resource icon='libraries' count={libraries} />
+        </ResourceBar>
         {children}
       </div>
     </Card>
