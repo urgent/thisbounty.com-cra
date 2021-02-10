@@ -108,7 +108,7 @@ const TitleBar = styled.div`
 
 const ResourceBar = styled.div`
   display: flex;
-  width: 170px;
+  width: 165px;
   font-size: 0.8rem;
   justify-content: space-evenly;
 `

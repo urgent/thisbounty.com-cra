@@ -2,7 +2,7 @@
 
 exports[`Bounty renders correctly 1`] = `
 <div
-  className="sc-pFZIQ bOFdFl bounty"
+  className="sc-pFZIQ jzWvba bounty"
 >
   <div
     className="shadow"
@@ -326,7 +326,7 @@ exports[`Bounty renders correctly 1`] = `
       </svg>
     </div>
     <div
-      className="sc-kEjbxe kRknNx"
+      className="sc-kEjbxe bfGhmx"
     >
       <div>
         <svg
