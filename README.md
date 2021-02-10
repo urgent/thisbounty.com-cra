@@ -6,38 +6,37 @@ Programming computers.
 
 ## What problem am I trying to solve?
 
-The hidden pitfalls of programming computers. Often the manual and marketing does not tell the full story. thisbounty.com offers a compelling software knowledge base to increase the amount of people in the world who have "done it before."
+Build experience for future clients. "done it before" dashboard
 
 ## Principles
 
 1. Done it before: Experience. First build internal tools. Then launch proven solutions as products to the market.
 2. No customs: Make it look like the manual as close as possible.
 3. Goals: Create, track with a strong and defined focus.
-4. Focus on the core business: How does it make money? How do I get paid? Finance markets are the wisest ones of us all.
-5. Build clear rules outside of the tech.
-6. List everything not core business. At least you are aware.
-7. Fix bugs, add features: Don't start with "change the world". First find an existing problem and fix it.
-8. No hot fixes: Scrambling upon launch and go live is a sign of a bad plan. Scrap the entire thing.
-9. Use IDEs and version control instead of inner platforms.
-10. Users expect robust features: If the user wants a sort, and there's no sort, dump data to Excel and scrap your custom work.
-11. Either don't do it, or do it full effort.
-12. Quick launch: Even if it's just a newsletter signup.
-13. Do not pay for advertising: Get clients instead, and share.
-14. Walk away: Leave it for others to build. Be happy it got built. Sometimes it's the fastest way.
+4. Focus on the core business: How does it make money? How do I get paid?
+5. List everything not core business. At least you are aware.
+6. Fix bugs, add features: Don't start with "change the world". First find an existing problem and fix it.
+7. No hot fixes: Scrap the entire thing on unforseen problems. Don't want to solve one problem only to create two more.
+8. Use spreadsheets, IDEs, version control, database admins, monitoring, alerts instead of custom admins and inner platforms.
+9. Users expect robust features: If the user wants a sort, and there's no sort, dump data to Excel and scrap your custom work.
+10. Either don't do it, or do it full effort.
+11. Quick launch: Even if it's just a newsletter signup.
+12. Do not pay for advertising: Get clients instead, and share.
+13. Walk away: Leave it for others to build. Be happy it got built. Sometimes it's the fastest way.
 
 ## User Persona
 
-Software programmers who work an hour or two a day, who see earning money as healthy, and the market as the final judge of skill.
+Software programmers who work an hour or two a day.
 
 ## What problems am I not trying to solve, and why?
 
 ### Bug bounties
 
-The exact opposite of what I want. Open ended, arbitrary. I want software kan ban. Repeated, clearly defined work.
+Open ended, arbitrary.
 
 ### Freelance market fees, signup, finding leads, competition, and siloed production
 
-The origin of the site's name and motto. Freelance is a crowded market already. Too much work to launch. Not that big of a deal to pay the fee and find work. Current setup is non-intuitive, and requires direct instruction. Market leaders have separate channels, like research university or hiring direct in workforce.
+Crowded market already. Too much work for launch. Easier to pay the fee. Market leaders avoid freelance, hire direct and use research universities.
 
 ### Automate mundane tasks. Github repo. Netlify launch. Figma style guide
 
@@ -49,67 +48,64 @@ Too many different approaches. Every product is different.
 
 ### Automate payments on passing unit tests
 
-A security nightmare. Easier to pay people regardless.
+Security nightmare. Easier to pay people.
 
 ## Application of thisbounty.com
 
-1. Done it before: `Building internal tool first on my time and dime. Doing it now :)`
-2. No customs: `Threw my webrtc p2p graphql misadventure into the dumpster.`
-3. Create and track goals: `If this isn't built on 25th February, it's dead on 26th February`
-4. Focus on the core business: `Make money direct from clients. Building this knowledge base is their "done it before".`
+1. Done it before: `Core tech done before. New tech experience from this project.`
+2. No customs: `Suspense API, Relay, styled components.`
+3. Create and track goals: `Deadline of 26th February`
+4. Focus on the core business: `Build experience for future clients`
 5. Build clear rules outside of the tech. `See Rules`
-6. List everything not core business. At least you are aware. `Doing it before. Eventually, a public facing app for users to commission work. Bounty scoring is going to be tough. Hasura host. React frontend. FA icons. Custom knowledge base, goal setting, ...`
-7. Fix bugs, add features: `Bug: experience. Feature: core business knowledge base`
-8. No hot fixes: `Not live, no users`
-9. Use IDEs and version control instead of inner platforms. `Only industry standard platforms, no customs`
-10. Users expect robust features: `Starting with name and health only`
-11. Either don't do it, or do it full effort. `Scrapped figma, diez, storybook, novel p2p graphql sourcing. Not afraid to scrap project. Keeping features minimal`
+6. List everything not core business. At least you are aware. `See ARCHITECTURE.md`
+7. Fix bugs, add features: `This is my "done it before". Standard procedures. Find all the hidden pain points`
+8. No hot fixes: `Focus on "done it before" Then worry about conversions`
+9. Use IDEs and version control instead of inner platforms. `No frontend mutations. Change through Hasura`
+10. Users expect robust features: `Visualization only. No conversion`
+11. Either don't do it, or do it full effort. `Keeping features minimal. Not afraid to scrap entire thing`
 12. Quick launch: `Launched with an excel sheet`
 13. Do not pay for advertising: `Finding clients`
 14. Walk away: `Left decentralization behind`
 
 ## Rules
 
-1. Three strikes, and your bounty is out.
-2. What's a strike? Problem. Roadblock. Haven't done it before. Anything that delays launch.
-3. Launched something with it? Get an extra at-bat.
-4. If you're out, retry with a more basic approach. For instance, DOM instead of React, or API instead of GraphQL.
-5. Money, users, resources, links per discretion. People read them though.
+1. Growth: 5 new bids prior to work on thisbounty.com
+2. No surprises: Work for free before agreeing to terms
+3. Time: Keep an itinerary before work
+4. Track: At close, reflect on each workday
+5. Plan: After reflection, visualize next workday
+6. Focus: Pomodoro on while working, no exceptions
+7. Perfection: If it's not perfect, get rid of it, move on
 
 ## Navigation
 
-1. Bounties can have leads, specific independent tasks. Click a bounty to see the leads.
-2. Leads can have bounties of their own. Click a lead to see the bounties.
-3. Escape back home by clicking the top bounty with the "one up" navigation symbol.
+1. Suits on left, leads on right.
+2. Suits -> Bounty -> Leads, parent child relations
+3. Leads have bounties of their own, to suggest a workflow.
 4. Edit values through pgadmin until public release.
 
 ## Public Release
 
-1. Click "New" to create a new bounty. Type in name.
-2. Click bounty, then click "New" to create a lead.
-3. Bad bounties or leads strike out on their own. Move on. Leave your mistakes.
-4. Click "Share" to let other people know about your bounty.
-5. Click an attribute, then click "Sort" to sort bounties.
-6. Click "Search" to search bounties and leads by keyword.
-7. Chat drops to Discord.
-8. Bomb shows dissastisfcation. Repeatitive clicks lead to easter eggs.
+Conversion call to action. Allow users to commission new work. Popup in bottom middle. Show goals, principles, like focus on core business.
+
+Automate provisioning. <-- Do that first.
 
 ## Goals
 
-| Goals                                                      | Timeline  | Progress tracking                              |
-| ---------------------------------------------------------- | --------- | ---------------------------------------------- |
-| Get in the habit of doing things perfect, no shortcuts     | Daily     | Continuous                                     |
-| Focus to the point of subvocalize all actions              | Daily     | Continuous                                     |
-| Eliminate distractions. It happens, recogonize it, move on | Daily     | Continuous                                     |
-| Avoid time sinks, paths to nowhere, fixations              | Daily     | Continuous                                     |
-| Fun, humble, solve a need                                  | Daily     | Continuous                                     |
-| Visualize before acting                                    | Daily     | Reflection                                     |
-| Experience, done it before, no surprises                   | Daily     | thisbounty.com                                 |
-| Abstraction, allow tolerance for surprises                 | Daily     | Reflection                                     |
-| Reflection, identify and acknowledge mistakes              | Daily     | -                                              |
-| Build thisbounty.com                                       | One month | 26th January, no launch, dead on 26th February |
-| Get a client                                               | One month | 26th January, no client, dead on 26th February |
-| ~~Follow up with past clients~~                            | One time  | ~~Production~~ Done!                           |
+| Goals                                                      | Timeline  | Progress tracking                |
+| ---------------------------------------------------------- | --------- | -------------------------------- |
+| Get in the habit of doing things perfect, no shortcuts     | Daily     | Continuous                       |
+| Focus to the point of subvocalize all actions              | Daily     | Continuous                       |
+| Eliminate distractions. It happens, recogonize it, move on | Daily     | Continuous                       |
+| Avoid time sinks, paths to nowhere, fixations              | Daily     | Continuous                       |
+| Fun, humble, solve a need                                  | Daily     | Continuous                       |
+| Visualize before acting                                    | Daily     | Reflection                       |
+| Experience, done it before, no surprises                   | Daily     | thisbounty.com                   |
+| Abstraction, allow tolerance for surprises                 | Daily     | Reflection                       |
+| Reflection, identify and acknowledge mistakes              | Daily     | -                                |
+| Build thisbounty.com                                       | One month | 26th February, stop work, review |
+| Get a client                                               | One month | 26th February, stop work, review |
+| ~~Follow up with past clients~~                            | One time  | ~~Production~~ Done!             |
 
 ---
 
