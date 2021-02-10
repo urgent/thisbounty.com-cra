@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ID renders correctly 1`] = `
+<a
+  className="sc-bdfBwQ cteGcY"
+  href="#0"
+>
+  #
+  0
+</a>
+`;
+
+exports[`ID renders correctly 2`] = `
+<a
+  className="sc-bdfBwQ cteGcY"
+  href="#100"
+>
+  #
+  100
+</a>
+`;

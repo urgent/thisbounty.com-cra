@@ -1,4 +1,5 @@
 import React, { ReactChildren } from 'react'
+import { ID } from './ID'
 import { Lifebar } from './Lifebar'
 import { Moneybar } from './Moneybar'
 import { Userbar } from './Userbar'
@@ -87,8 +88,9 @@ const TitleBar = styled.div`
   grid-row: title;
   display: grid;
   grid-template-columns: [header] 5fr [id] 1fr;
+  width: 150px;
 
-  * {
+  h1 {
     margin: 4px 0 0 0;
   }
 
@@ -170,6 +172,7 @@ export function Bounty ({
       <div className='stats'>
         <TitleBar>
           <h2>{title}</h2>
+          <ID value={id} />
         </TitleBar>
         <Lifebar life={life} max={lifeMax} enhance={lifeEnhance} />
         <Moneybar money={money} max={moneyMax} />

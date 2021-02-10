@@ -2,7 +2,7 @@
 
 exports[`Bounty renders correctly 1`] = `
 <div
-  className="sc-fubCfw eJPMsi bounty"
+  className="sc-pFZIQ bOFdFl bounty"
 >
   <div
     className="shadow"
@@ -12,20 +12,27 @@ exports[`Bounty renders correctly 1`] = `
     className="stats"
   >
     <div
-      className="sc-pFZIQ fiaBTt"
+      className="sc-jrAGrp jpsMnP"
     >
       <h2>
         Get a client
       </h2>
+      <a
+        className="sc-bdfBwQ cteGcY"
+        href="#21"
+      >
+        #
+        21
+      </a>
     </div>
     <ul
-      className="sc-gsTCUz kZtsAU lifebar"
+      className="sc-dlfnbm dVZoKL lifebar"
     >
       <li>
         <span>
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-heart fa-w-16 sc-bdfBwQ jyRKPL heart"
+            className="svg-inline--fa fa-heart fa-w-16 sc-gsTCUz koPeyr heart"
             data-icon="heart"
             data-prefix="fas"
             focusable="false"
@@ -51,7 +58,7 @@ exports[`Bounty renders correctly 1`] = `
         <span>
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-heart fa-w-16 sc-bdfBwQ jyRKPL heart"
+            className="svg-inline--fa fa-heart fa-w-16 sc-gsTCUz koPeyr heart"
             data-icon="heart"
             data-prefix="fas"
             focusable="false"
@@ -77,7 +84,7 @@ exports[`Bounty renders correctly 1`] = `
         <span>
           <svg
             aria-hidden="true"
-            className="svg-inline--fa fa-heart fa-w-16 sc-bdfBwQ jyRKPL heart"
+            className="svg-inline--fa fa-heart fa-w-16 sc-gsTCUz koPeyr heart"
             data-icon="heart"
             data-prefix="fas"
             focusable="false"
@@ -101,7 +108,7 @@ exports[`Bounty renders correctly 1`] = `
       </li>
     </ul>
     <svg
-      className="sc-dlfnbm bKkAus"
+      className="sc-hKgILt kWdQcq"
       fill="none"
       height="37"
       version="1.1"
@@ -231,11 +238,11 @@ exports[`Bounty renders correctly 1`] = `
       </defs>
     </svg>
     <div
-      className="sc-hKgILt ehmWwV"
+      className="sc-eCssSg ifsWGG"
     >
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-user fa-w-14 sc-eCssSg iyxjrl"
+        className="svg-inline--fa fa-user fa-w-14 sc-jSgupP gDjMXc"
         data-icon="user"
         data-prefix="fas"
         focusable="false"
@@ -251,7 +258,7 @@ exports[`Bounty renders correctly 1`] = `
         />
       </svg>
       <svg
-        className="sc-jSgupP gNtTBT sc-hKgILt kWdQcq"
+        className="sc-gKsewC UDbIK sc-hKgILt kWdQcq"
         fill="none"
         height="37"
         id="svg131"
@@ -319,12 +326,12 @@ exports[`Bounty renders correctly 1`] = `
       </svg>
     </div>
     <div
-      className="sc-jrAGrp jwNtna"
+      className="sc-kEjbxe kRknNx"
     >
       <div>
         <svg
           aria-hidden="true"
-          className="svg-inline--fa fa-users-cog fa-w-20 sc-gKsewC ljmesp"
+          className="svg-inline--fa fa-users-cog fa-w-20 sc-iBPRYJ drFabV"
           data-icon="users-cog"
           data-prefix="fas"
           focusable="false"
@@ -345,7 +352,7 @@ exports[`Bounty renders correctly 1`] = `
       <div>
         <svg
           aria-hidden="true"
-          className="svg-inline--fa fa-server fa-w-16 sc-gKsewC ljmesp"
+          className="svg-inline--fa fa-server fa-w-16 sc-iBPRYJ drFabV"
           data-icon="server"
           data-prefix="fas"
           focusable="false"
@@ -366,7 +373,7 @@ exports[`Bounty renders correctly 1`] = `
       <div>
         <svg
           aria-hidden="true"
-          className="svg-inline--fa fa-file-code fa-w-12 sc-gKsewC ljmesp"
+          className="svg-inline--fa fa-file-code fa-w-12 sc-iBPRYJ drFabV"
           data-icon="file-code"
           data-prefix="fas"
           focusable="false"
@@ -387,7 +394,7 @@ exports[`Bounty renders correctly 1`] = `
       <div>
         <svg
           aria-hidden="true"
-          className="svg-inline--fa fa-book fa-w-14 sc-gKsewC ljmesp"
+          className="svg-inline--fa fa-book fa-w-14 sc-iBPRYJ drFabV"
           data-icon="book"
           data-prefix="fas"
           focusable="false"
@@ -407,7 +414,7 @@ exports[`Bounty renders correctly 1`] = `
       </div>
     </div>
     <div
-      className="sc-kEjbxe lhgpQN"
+      className="sc-iqHYGH jFYpCI"
     />
   </div>
 </div>
