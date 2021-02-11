@@ -51,10 +51,6 @@ Clients pay me to program computers.
 2. Gamification: scoring system for health, money, users, resources, and links
 3. Navigation: drilling down a dashboard. Suits on left, leads on right
 4. Bounty properties, component declarative state.
+5. Provisioning
 
-All help with experience with future clients. A possible workflow to fill out for new customers.
-To turn into something profitable, something that converts, need a call to action.
-Perhaps that bomb icon button on the bottom, that pops up.
-Answers a serious of questions for a new project. If you agree on principles, define goals.
-Also needs something that runs itself. Not just leads going to email. But that's a lot of work.
-Deploy like Hasura does. OAuth customer's account. Launch resources there, netlify, github, google cloud, heroku, aws ...
+Deploy like Hasura does. OAuth customer's account. Launch resources there, netlify, github, google cloud, heroku, aws ... Get the customer to contribute. New button to open up an empty bounty.

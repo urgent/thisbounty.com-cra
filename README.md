@@ -81,16 +81,16 @@ Security nightmare. Easier to pay people.
 
 ## Navigation
 
-1. Suits on left, leads on right.
-2. Suits -> Bounty -> Leads, parent child relations
-3. Leads have bounties of their own, to suggest a workflow.
-4. Edit values through hasura until public release.
+1. Leads have bounties of their own, to suggest a workflow.
+2. Edit values through hasura until public release.
 
 ## Public Release
 
 Conversion call to action. Allow users to commission new work. Popup in bottom middle. Show goals, principles, like focus on core business.
 
-Automate provisioning. <-- Do that first.
+Automate provisioning. <-- Do that first, like Hasura did with Heroku
+
+Open up a bounty, allow user to type. Select existing bounties and build provisioning.
 
 ## Goals
 
