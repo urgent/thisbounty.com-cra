@@ -2,6 +2,7 @@ import React from 'react';
 import { Bounty } from './component/Bounty'
 import './App.css';
 import styled from 'styled-components'
+import { Providers } from './Providers';
 
 const Flag = styled.div`
   text-align: center;
@@ -421,17 +422,19 @@ const bounties = [
 
 function App() {
   return (
-    <Flag>
-      <TitleBar><a href="/">thisbounty.com</a></TitleBar>
-      <Main>
-        {bounties.map((bounty, i) => <Bounty {...bounty} key={i} />)}
-      </Main>
-      <footer>
-        <ul>
-          <li><a href="https://github.com/urgent/thisbounty.com" style={{ color: "#fff" }}>readme.md</a></li>
-        </ul>
-      </footer>
-    </Flag>
+    <Providers>
+      <Flag>
+        <TitleBar><a href="/">thisbounty.com</a></TitleBar>
+        <Main>
+          {bounties.map((bounty, i) => <Bounty {...bounty} key={i} />)}
+        </Main>
+        <footer>
+          <ul>
+            <li><a href="https://github.com/urgent/thisbounty.com" style={{ color: "#fff" }}>readme.md</a></li>
+          </ul>
+        </footer>
+      </Flag>
+    </Providers>
   );
 }
 
