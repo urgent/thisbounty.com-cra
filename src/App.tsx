@@ -2,9 +2,6 @@ import React from 'react'
 import { Bounty } from './component/Bounty'
 import './App.css'
 import styled from 'styled-components'
-import { Providers } from './Providers'
-import { usePreloadedQuery } from 'react-relay/hooks'
-import graphql from 'babel-plugin-relay/macro'
 
 const Flag = styled.div`
   text-align: center;
@@ -428,64 +425,30 @@ const bounties = [
   }
 ]
 
-type Props = {
-  prepared: {
-    appQuery: any
-  }
-}
-
-const gql = graphql`
-  query AppQuery {
-    bounty {
-      id
-      title
-      image
-      imageAlt
-      life
-      lifeMax
-      money
-      moneyMax
-      users
-      usersMax
-      programmers
-      servers
-      scripts
-      libraries
-      tags
-      tagLinks
-      hurtLog
-    }
-  }
-`
-
-function App ({ prepared }: Props) {
-  const query = usePreloadedQuery(gql, prepared.appQuery)
-
+function App () {
   return (
-    <Providers>
-      <Flag>
-        <TitleBar>
-          <a href='/'>thisbounty.com</a>
-        </TitleBar>
-        <Main>
-          {bounties.map((bounty, i) => (
-            <Bounty {...bounty} key={i} />
-          ))}
-        </Main>
-        <footer>
-          <ul>
-            <li>
-              <a
-                href='https://github.com/urgent/thisbounty.com'
-                style={{ color: '#fff' }}
-              >
-                readme.md
-              </a>
-            </li>
-          </ul>
-        </footer>
-      </Flag>
-    </Providers>
+    <Flag>
+      <TitleBar>
+        <a href='/'>thisbounty.com</a>
+      </TitleBar>
+      <Main>
+        {bounties.map((bounty, i) => (
+          <Bounty {...bounty} key={i} />
+        ))}
+      </Main>
+      <footer>
+        <ul>
+          <li>
+            <a
+              href='https://github.com/urgent/thisbounty.com'
+              style={{ color: '#fff' }}
+            >
+              readme.md
+            </a>
+          </li>
+        </ul>
+      </footer>
+    </Flag>
   )
 }
 
