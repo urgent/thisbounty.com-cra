@@ -2,8 +2,8 @@ import { fetchQuery } from "./Environment"
 
 const operation = {
     text: `query {
-        bounty_by_pk(id:1) {
-            id
+        bounty_by_pk(bounty_id:1) {
+            bounty_id
         }
     }`
 }
@@ -11,7 +11,7 @@ const operation = {
 const result = {
     "data": {
         "bounty_by_pk": {
-            "id": 1
+            "bounty_id": 1
         }
     }
 };

@@ -3,7 +3,7 @@ import React from 'react'
 import { Bounty } from './Bounty'
 
 const bounty = {
-    id: 21,
+    bounty_id: 21,
     title: 'Get a client',
     life: 2,
     lifeMax: 3,
