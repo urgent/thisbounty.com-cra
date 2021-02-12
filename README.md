@@ -8,7 +8,12 @@ Programming computers.
 
 Computer programming experience. "done it before". Take an entire project from start to finish, so there are no surprises when working for future clients.
 
-Personal workspace. Frontend, server, build, platforms. Test leading technology. Ready to go setup to reduce provisioning for future clients.
+Features:
+
+1.  Personal workspace: Fast response to clients, test and preview new features.
+2.  Frontend, server, build, platforms: Provisioned, internal tools ready to use on new projects.
+3.  Test leading technology: Something new launches, have the infrastructure to try it out before using it for clients.
+4.  Potential sales: Start with a broad sales funnel, maybe even negative, spend to find context and intent, convert to client.
 
 ## Principles
 
@@ -54,8 +59,8 @@ Security nightmare. Easier to pay people.
 
 ## Application of thisbounty.com
 
-1. Done it before: `Core tech done before. New tech experience from this project.`
-2. No customs: `Suspense API, Relay, styled components.`
+1. Done it before: `Core tech done before. Build experience with this project.`
+2. No customs: `React, relay, styled-components, React Router. Standalone components, low dependencies. Removed relay experimental.`
 3. Create and track goals: `Deadline of 26th February`
 4. Focus on the core business: `Build experience for future clients`
 5. Build clear rules outside of the tech. `See Rules`
