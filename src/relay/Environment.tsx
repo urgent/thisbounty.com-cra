@@ -1,23 +1,21 @@
-import { Environment, Network, RecordSource, Store } from 'relay-runtime'
+import { Environment, Network, RecordSource, Store } from "relay-runtime";
 
-export function fetchQuery (operation: any, variables: any) {
-  return fetch(process.env.GRAPHQL_SERVER as string, {
-    method: 'POST',
+export function fetchQuery(operation: any, variables: any) {
+  return fetch("https://thisbounty.hasura.app/v1/graphql", {
+    method: "POST",
     headers: {
-      'Content-Type': 'application/json'
+      "Content-Type": "application/json",
     },
     body: JSON.stringify({
       query: operation.text,
-      variables
-    })
-  }).then(response => {
-    return response.json()
-  })
+      variables,
+    }),
+  }).then((response) => {
+    return response.json();
+  });
 }
 
-const environment = new Environment({
+export const environment = new Environment({
   network: Network.create(fetchQuery),
-  store: new Store(new RecordSource())
-})
-
-export default environment
+  store: new Store(new RecordSource()),
+});

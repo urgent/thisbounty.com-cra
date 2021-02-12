@@ -6,7 +6,6 @@ import { Userbar } from "./Userbar";
 import { Resource } from "./Resource";
 import { Link } from "./Link";
 import styled from "styled-components";
-import { graphql } from "babel-plugin-relay/macro";
 
 const Card = styled.div`
   display: grid;
@@ -121,32 +120,8 @@ const LinkBar = styled.div`
   margin-left: 5px;
 `;
 
-const BountyQuery = graphql`
-  query BountyQuery {
-    bounty {
-      id
-      title
-      image
-      imageAlt
-      life
-      lifeMax
-      money
-      moneyMax
-      users
-      usersMax
-      programmers
-      servers
-      scripts
-      libraries
-      tags
-      tagLinks
-      hurtLog
-    }
-  }
-`;
-
 interface Props {
-  id: number;
+  bounty_id: number;
   title: string;
   image?: string;
   imageAlt?: string;
@@ -168,7 +143,7 @@ interface Props {
 }
 
 export function Bounty({
-  id,
+  bounty_id,
   title,
   image,
   imageAlt,
@@ -195,7 +170,7 @@ export function Bounty({
       <div className="stats">
         <TitleBar>
           <h2>{title}</h2>
-          <ID value={id} />
+          <ID value={bounty_id} />
         </TitleBar>
         <Lifebar life={life} max={lifeMax} enhance={lifeEnhance} />
         <Moneybar money={money} max={moneyMax} />
