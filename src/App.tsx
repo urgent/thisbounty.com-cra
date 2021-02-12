@@ -1,8 +1,10 @@
-import React from 'react';
+import React from 'react'
 import { Bounty } from './component/Bounty'
-import './App.css';
+import './App.css'
 import styled from 'styled-components'
-import { Providers } from './Providers';
+import { Providers } from './Providers'
+import { usePreloadedQuery } from 'react-relay/hooks'
+import graphql from 'babel-plugin-relay/macro'
 
 const Flag = styled.div`
   text-align: center;
@@ -20,21 +22,20 @@ const Main = styled.main`
   background: #212529;
   width: 320px;
   justify-self: center;
-  margin-top:1rem;
-  
+  margin-top: 1rem;
 `
 
 const TitleBar = styled.header`
-  margin:0;
+  margin: 0;
   background: #212529;
   grid-row: titlebar;
   width: 100%;
-  font-size:0.8rem;
-  padding: .5rem 0 0 1rem;
-  text-align:left;
+  font-size: 0.8rem;
+  padding: 0.5rem 0 0 1rem;
+  text-align: left;
 
   a {
-    color: #FFF;
+    color: #fff;
   }
 `
 
@@ -56,8 +57,12 @@ const bounties = [
     scripts: 2,
     libraries: 1,
     tags: ['github', 'docker', 'dvc'],
-    tagLinks: ['https://github.com/urgent/thisbounty.com', 'https://github.com/urgent/hasura/blob/master/docker-compose.yaml', 'https://github.com/urgent/kaiterra'],
-    hurtLog: [],
+    tagLinks: [
+      'https://github.com/urgent/thisbounty.com',
+      'https://github.com/urgent/hasura/blob/master/docker-compose.yaml',
+      'https://github.com/urgent/kaiterra'
+    ],
+    hurtLog: []
   },
   {
     id: 2,
@@ -76,7 +81,7 @@ const bounties = [
     libraries: 1,
     tags: ['github'],
     tagLinks: ['https://github.com/urgent/thisbounty.com#goals'],
-    hurtLog: [],
+    hurtLog: []
   },
   {
     id: 3,
@@ -93,7 +98,7 @@ const bounties = [
     libraries: 1,
     tags: ['github'],
     tagLinks: ['https://github.com/urgent/thisbounty.com#rules'],
-    hurtLog: [],
+    hurtLog: []
   },
   {
     id: 4,
@@ -110,7 +115,7 @@ const bounties = [
     libraries: 1,
     tags: [],
     tagLinks: [],
-    hurtLog: [],
+    hurtLog: []
   },
   {
     id: 5,
@@ -127,7 +132,7 @@ const bounties = [
     libraries: 0,
     tags: [],
     tagLinks: [],
-    hurtLog: [''],
+    hurtLog: ['']
   },
   {
     id: 6,
@@ -144,7 +149,7 @@ const bounties = [
     libraries: 0,
     tags: [],
     tagLinks: [],
-    hurtLog: ['Slow in Australia'],
+    hurtLog: ['Slow in Australia']
   },
   {
     id: 7,
@@ -161,7 +166,7 @@ const bounties = [
     libraries: 1,
     tags: [],
     tagLinks: [],
-    hurtLog: ['Needs Souin caching'],
+    hurtLog: ['Needs Souin caching']
   },
   {
     id: 8,
@@ -178,7 +183,7 @@ const bounties = [
     libraries: 0,
     tags: [],
     tagLinks: [],
-    hurtLog: ['Interface for extract, dimensions', 'PyTorch'],
+    hurtLog: ['Interface for extract, dimensions', 'PyTorch']
   },
   {
     id: 9,
@@ -195,7 +200,7 @@ const bounties = [
     libraries: 0,
     tags: [],
     tagLinks: [],
-    hurtLog: [],
+    hurtLog: []
   },
   {
     id: 10,
@@ -212,7 +217,7 @@ const bounties = [
     libraries: 0,
     tags: [],
     tagLinks: [],
-    hurtLog: [],
+    hurtLog: []
   },
   {
     id: 10,
@@ -229,7 +234,7 @@ const bounties = [
     libraries: 0,
     tags: [],
     tagLinks: [],
-    hurtLog: ['RAM'],
+    hurtLog: ['RAM']
   },
   {
     id: 11,
@@ -246,7 +251,7 @@ const bounties = [
     libraries: 0,
     tags: [],
     tagLinks: [],
-    hurtLog: ['Continuous'],
+    hurtLog: ['Continuous']
   },
   {
     id: 12,
@@ -263,7 +268,7 @@ const bounties = [
     libraries: 0,
     tags: [],
     tagLinks: [],
-    hurtLog: ['Continuous', 'Visual cues, first thing'],
+    hurtLog: ['Continuous', 'Visual cues, first thing']
   },
   {
     id: 13,
@@ -280,7 +285,7 @@ const bounties = [
     libraries: 0,
     tags: [],
     tagLinks: [],
-    hurtLog: ['Continuous', 'Corrective action required'],
+    hurtLog: ['Continuous', 'Corrective action required']
   },
   {
     id: 14,
@@ -297,7 +302,7 @@ const bounties = [
     libraries: 0,
     tags: [],
     tagLinks: [],
-    hurtLog: ['Continuous', 'Pomodoro', 'Focus'],
+    hurtLog: ['Continuous', 'Pomodoro', 'Focus']
   },
   {
     id: 15,
@@ -314,7 +319,7 @@ const bounties = [
     libraries: 0,
     tags: [],
     tagLinks: [],
-    hurtLog: ['Continuous'],
+    hurtLog: ['Continuous']
   },
   {
     id: 16,
@@ -331,7 +336,7 @@ const bounties = [
     libraries: 0,
     tags: [],
     tagLinks: [],
-    hurtLog: ['Reflection', 'Write itinerary, plan the day'],
+    hurtLog: ['Reflection', 'Write itinerary, plan the day']
   },
   {
     id: 17,
@@ -348,7 +353,7 @@ const bounties = [
     libraries: 0,
     tags: [],
     tagLinks: [],
-    hurtLog: ['thisbounty.com'],
+    hurtLog: ['thisbounty.com']
   },
   {
     id: 18,
@@ -365,7 +370,7 @@ const bounties = [
     libraries: 0,
     tags: [],
     tagLinks: [],
-    hurtLog: ['Reflection', 'Need more reflect and visualize'],
+    hurtLog: ['Reflection', 'Need more reflect and visualize']
   },
   {
     id: 19,
@@ -382,7 +387,7 @@ const bounties = [
     libraries: 0,
     tags: [],
     tagLinks: [],
-    hurtLog: ['Replace bad habits with reflection'],
+    hurtLog: ['Replace bad habits with reflection']
   },
   {
     id: 20,
@@ -399,7 +404,7 @@ const bounties = [
     libraries: 0,
     tags: [],
     tagLinks: [],
-    hurtLog: ['26th January, no launch, dead by 26th February'],
+    hurtLog: ['26th January, no launch, dead by 26th February']
   },
   {
     id: 21,
@@ -416,26 +421,72 @@ const bounties = [
     libraries: 0,
     tags: [],
     tagLinks: [],
-    hurtLog: ['26th January, no launch, dead by 26th February', 'Worked for free, need to vet people more'],
-  },
+    hurtLog: [
+      '26th January, no launch, dead by 26th February',
+      'Worked for free, need to vet people more'
+    ]
+  }
 ]
 
-function App() {
+type Props = {
+  prepared: {
+    appQuery: any
+  }
+}
+
+const gql = graphql`
+  query AppQuery {
+    bounty {
+      id
+      title
+      image
+      imageAlt
+      life
+      lifeMax
+      money
+      moneyMax
+      users
+      usersMax
+      programmers
+      servers
+      scripts
+      libraries
+      tags
+      tagLinks
+      hurtLog
+    }
+  }
+`
+
+function App ({ prepared }: Props) {
+  const query = usePreloadedQuery(gql, prepared.appQuery)
+
   return (
     <Providers>
       <Flag>
-        <TitleBar><a href="/">thisbounty.com</a></TitleBar>
+        <TitleBar>
+          <a href='/'>thisbounty.com</a>
+        </TitleBar>
         <Main>
-          {bounties.map((bounty, i) => <Bounty {...bounty} key={i} />)}
+          {bounties.map((bounty, i) => (
+            <Bounty {...bounty} key={i} />
+          ))}
         </Main>
         <footer>
           <ul>
-            <li><a href="https://github.com/urgent/thisbounty.com" style={{ color: "#fff" }}>readme.md</a></li>
+            <li>
+              <a
+                href='https://github.com/urgent/thisbounty.com'
+                style={{ color: '#fff' }}
+              >
+                readme.md
+              </a>
+            </li>
           </ul>
         </footer>
       </Flag>
     </Providers>
-  );
+  )
 }
 
-export default App;
+export default App

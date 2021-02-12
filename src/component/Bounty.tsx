@@ -123,11 +123,11 @@ const LinkBar = styled.div`
 type Attributes = {
   id: number
   title: string
-  image: string
-  imageAlt: string
+  image?: string
+  imageAlt?: string
   life: number
   lifeMax: number
-  lifeEnhance: boolean
+  lifeEnhance?: boolean
   money: number
   moneyMax: number
   users: number

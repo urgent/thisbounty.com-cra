@@ -1,0 +1,1824 @@
+schema {
+  query: query_root
+  mutation: mutation_root
+  subscription: subscription_root
+}
+
+# columns and relationships of "bounty"
+type bounty {
+  hurtLog(
+    # JSON select path
+    path: String
+  ): jsonb!
+  id: Int!
+  image: String!
+  imageAlt: String!
+  leads(
+    # JSON select path
+    path: String
+  ): jsonb!
+  libraries: Int!
+  life: Int!
+  lifeEnhance: smallint!
+  lifeMax: Int!
+  money: Int!
+  moneyMax: Int!
+  programmers: Int!
+  scripts: Int!
+  servers: Int!
+  suits(
+    # JSON select path
+    path: String
+  ): jsonb!
+  tagLinks(
+    # JSON select path
+    path: String
+  ): jsonb!
+  tags(
+    # JSON select path
+    path: String
+  ): jsonb!
+  title: String!
+  users: Int!
+  usersMax: Int!
+}
+
+# aggregated selection of "bounty"
+type bounty_aggregate {
+  aggregate: bounty_aggregate_fields
+  nodes: [bounty!]!
+}
+
+# aggregate fields of "bounty"
+type bounty_aggregate_fields {
+  avg: bounty_avg_fields
+  count(columns: [bounty_select_column!], distinct: Boolean): Int
+  max: bounty_max_fields
+  min: bounty_min_fields
+  stddev: bounty_stddev_fields
+  stddev_pop: bounty_stddev_pop_fields
+  stddev_samp: bounty_stddev_samp_fields
+  sum: bounty_sum_fields
+  var_pop: bounty_var_pop_fields
+  var_samp: bounty_var_samp_fields
+  variance: bounty_variance_fields
+}
+
+# order by aggregate values of table "bounty"
+input bounty_aggregate_order_by {
+  avg: bounty_avg_order_by
+  count: order_by
+  max: bounty_max_order_by
+  min: bounty_min_order_by
+  stddev: bounty_stddev_order_by
+  stddev_pop: bounty_stddev_pop_order_by
+  stddev_samp: bounty_stddev_samp_order_by
+  sum: bounty_sum_order_by
+  var_pop: bounty_var_pop_order_by
+  var_samp: bounty_var_samp_order_by
+  variance: bounty_variance_order_by
+}
+
+# append existing jsonb value of filtered columns with new jsonb value
+input bounty_append_input {
+  hurtLog: jsonb
+  leads: jsonb
+  suits: jsonb
+  tagLinks: jsonb
+  tags: jsonb
+}
+
+# input type for inserting array relation for remote table "bounty"
+input bounty_arr_rel_insert_input {
+  data: [bounty_insert_input!]!
+  on_conflict: bounty_on_conflict
+}
+
+# aggregate avg on columns
+type bounty_avg_fields {
+  id: Float
+  libraries: Float
+  life: Float
+  lifeEnhance: Float
+  lifeMax: Float
+  money: Float
+  moneyMax: Float
+  programmers: Float
+  scripts: Float
+  servers: Float
+  users: Float
+  usersMax: Float
+}
+
+# order by avg() on columns of table "bounty"
+input bounty_avg_order_by {
+  id: order_by
+  libraries: order_by
+  life: order_by
+  lifeEnhance: order_by
+  lifeMax: order_by
+  money: order_by
+  moneyMax: order_by
+  programmers: order_by
+  scripts: order_by
+  servers: order_by
+  users: order_by
+  usersMax: order_by
+}
+
+# Boolean expression to filter rows from the table "bounty". All fields are combined with a logical 'AND'.
+input bounty_bool_exp {
+  _and: [bounty_bool_exp]
+  _not: bounty_bool_exp
+  _or: [bounty_bool_exp]
+  hurtLog: jsonb_comparison_exp
+  id: Int_comparison_exp
+  image: String_comparison_exp
+  imageAlt: String_comparison_exp
+  leads: jsonb_comparison_exp
+  libraries: Int_comparison_exp
+  life: Int_comparison_exp
+  lifeEnhance: smallint_comparison_exp
+  lifeMax: Int_comparison_exp
+  money: Int_comparison_exp
+  moneyMax: Int_comparison_exp
+  programmers: Int_comparison_exp
+  scripts: Int_comparison_exp
+  servers: Int_comparison_exp
+  suits: jsonb_comparison_exp
+  tagLinks: jsonb_comparison_exp
+  tags: jsonb_comparison_exp
+  title: String_comparison_exp
+  users: Int_comparison_exp
+  usersMax: Int_comparison_exp
+}
+
+# unique or primary key constraints on table "bounty"
+enum bounty_constraint {
+  # unique or primary key constraint
+  bounty_pkey
+}
+
+# delete the field or element with specified path (for JSON arrays, negative integers count from the end)
+input bounty_delete_at_path_input {
+  hurtLog: [String]
+  leads: [String]
+  suits: [String]
+  tagLinks: [String]
+  tags: [String]
+}
+
+# delete the array element with specified index (negative integers count from the
+# end). throws an error if top level container is not an array
+input bounty_delete_elem_input {
+  hurtLog: Int
+  leads: Int
+  suits: Int
+  tagLinks: Int
+  tags: Int
+}
+
+# delete key/value pair or string element. key/value pairs are matched based on their key value
+input bounty_delete_key_input {
+  hurtLog: String
+  leads: String
+  suits: String
+  tagLinks: String
+  tags: String
+}
+
+# input type for incrementing integer column in table "bounty"
+input bounty_inc_input {
+  id: Int
+  libraries: Int
+  life: Int
+  lifeEnhance: smallint
+  lifeMax: Int
+  money: Int
+  moneyMax: Int
+  programmers: Int
+  scripts: Int
+  servers: Int
+  users: Int
+  usersMax: Int
+}
+
+# input type for inserting data into table "bounty"
+input bounty_insert_input {
+  hurtLog: jsonb
+  id: Int
+  image: String
+  imageAlt: String
+  leads: jsonb
+  libraries: Int
+  life: Int
+  lifeEnhance: smallint
+  lifeMax: Int
+  money: Int
+  moneyMax: Int
+  programmers: Int
+  scripts: Int
+  servers: Int
+  suits: jsonb
+  tagLinks: jsonb
+  tags: jsonb
+  title: String
+  users: Int
+  usersMax: Int
+}
+
+# aggregate max on columns
+type bounty_max_fields {
+  id: Int
+  image: String
+  imageAlt: String
+  libraries: Int
+  life: Int
+  lifeEnhance: smallint
+  lifeMax: Int
+  money: Int
+  moneyMax: Int
+  programmers: Int
+  scripts: Int
+  servers: Int
+  title: String
+  users: Int
+  usersMax: Int
+}
+
+# order by max() on columns of table "bounty"
+input bounty_max_order_by {
+  id: order_by
+  image: order_by
+  imageAlt: order_by
+  libraries: order_by
+  life: order_by
+  lifeEnhance: order_by
+  lifeMax: order_by
+  money: order_by
+  moneyMax: order_by
+  programmers: order_by
+  scripts: order_by
+  servers: order_by
+  title: order_by
+  users: order_by
+  usersMax: order_by
+}
+
+# aggregate min on columns
+type bounty_min_fields {
+  id: Int
+  image: String
+  imageAlt: String
+  libraries: Int
+  life: Int
+  lifeEnhance: smallint
+  lifeMax: Int
+  money: Int
+  moneyMax: Int
+  programmers: Int
+  scripts: Int
+  servers: Int
+  title: String
+  users: Int
+  usersMax: Int
+}
+
+# order by min() on columns of table "bounty"
+input bounty_min_order_by {
+  id: order_by
+  image: order_by
+  imageAlt: order_by
+  libraries: order_by
+  life: order_by
+  lifeEnhance: order_by
+  lifeMax: order_by
+  money: order_by
+  moneyMax: order_by
+  programmers: order_by
+  scripts: order_by
+  servers: order_by
+  title: order_by
+  users: order_by
+  usersMax: order_by
+}
+
+# response of any mutation on the table "bounty"
+type bounty_mutation_response {
+  # number of affected rows by the mutation
+  affected_rows: Int!
+
+  # data of the affected rows by the mutation
+  returning: [bounty!]!
+}
+
+# input type for inserting object relation for remote table "bounty"
+input bounty_obj_rel_insert_input {
+  data: bounty_insert_input!
+  on_conflict: bounty_on_conflict
+}
+
+# on conflict condition type for table "bounty"
+input bounty_on_conflict {
+  constraint: bounty_constraint!
+  update_columns: [bounty_update_column!]!
+  where: bounty_bool_exp
+}
+
+# ordering options when selecting data from "bounty"
+input bounty_order_by {
+  hurtLog: order_by
+  id: order_by
+  image: order_by
+  imageAlt: order_by
+  leads: order_by
+  libraries: order_by
+  life: order_by
+  lifeEnhance: order_by
+  lifeMax: order_by
+  money: order_by
+  moneyMax: order_by
+  programmers: order_by
+  scripts: order_by
+  servers: order_by
+  suits: order_by
+  tagLinks: order_by
+  tags: order_by
+  title: order_by
+  users: order_by
+  usersMax: order_by
+}
+
+# primary key columns input for table: "bounty"
+input bounty_pk_columns_input {
+  id: Int!
+}
+
+# prepend existing jsonb value of filtered columns with new jsonb value
+input bounty_prepend_input {
+  hurtLog: jsonb
+  leads: jsonb
+  suits: jsonb
+  tagLinks: jsonb
+  tags: jsonb
+}
+
+# select columns of table "bounty"
+enum bounty_select_column {
+  # column name
+  hurtLog
+
+  # column name
+  id
+
+  # column name
+  image
+
+  # column name
+  imageAlt
+
+  # column name
+  leads
+
+  # column name
+  libraries
+
+  # column name
+  life
+
+  # column name
+  lifeEnhance
+
+  # column name
+  lifeMax
+
+  # column name
+  money
+
+  # column name
+  moneyMax
+
+  # column name
+  programmers
+
+  # column name
+  scripts
+
+  # column name
+  servers
+
+  # column name
+  suits
+
+  # column name
+  tagLinks
+
+  # column name
+  tags
+
+  # column name
+  title
+
+  # column name
+  users
+
+  # column name
+  usersMax
+}
+
+# input type for updating data in table "bounty"
+input bounty_set_input {
+  hurtLog: jsonb
+  id: Int
+  image: String
+  imageAlt: String
+  leads: jsonb
+  libraries: Int
+  life: Int
+  lifeEnhance: smallint
+  lifeMax: Int
+  money: Int
+  moneyMax: Int
+  programmers: Int
+  scripts: Int
+  servers: Int
+  suits: jsonb
+  tagLinks: jsonb
+  tags: jsonb
+  title: String
+  users: Int
+  usersMax: Int
+}
+
+# aggregate stddev on columns
+type bounty_stddev_fields {
+  id: Float
+  libraries: Float
+  life: Float
+  lifeEnhance: Float
+  lifeMax: Float
+  money: Float
+  moneyMax: Float
+  programmers: Float
+  scripts: Float
+  servers: Float
+  users: Float
+  usersMax: Float
+}
+
+# order by stddev() on columns of table "bounty"
+input bounty_stddev_order_by {
+  id: order_by
+  libraries: order_by
+  life: order_by
+  lifeEnhance: order_by
+  lifeMax: order_by
+  money: order_by
+  moneyMax: order_by
+  programmers: order_by
+  scripts: order_by
+  servers: order_by
+  users: order_by
+  usersMax: order_by
+}
+
+# aggregate stddev_pop on columns
+type bounty_stddev_pop_fields {
+  id: Float
+  libraries: Float
+  life: Float
+  lifeEnhance: Float
+  lifeMax: Float
+  money: Float
+  moneyMax: Float
+  programmers: Float
+  scripts: Float
+  servers: Float
+  users: Float
+  usersMax: Float
+}
+
+# order by stddev_pop() on columns of table "bounty"
+input bounty_stddev_pop_order_by {
+  id: order_by
+  libraries: order_by
+  life: order_by
+  lifeEnhance: order_by
+  lifeMax: order_by
+  money: order_by
+  moneyMax: order_by
+  programmers: order_by
+  scripts: order_by
+  servers: order_by
+  users: order_by
+  usersMax: order_by
+}
+
+# aggregate stddev_samp on columns
+type bounty_stddev_samp_fields {
+  id: Float
+  libraries: Float
+  life: Float
+  lifeEnhance: Float
+  lifeMax: Float
+  money: Float
+  moneyMax: Float
+  programmers: Float
+  scripts: Float
+  servers: Float
+  users: Float
+  usersMax: Float
+}
+
+# order by stddev_samp() on columns of table "bounty"
+input bounty_stddev_samp_order_by {
+  id: order_by
+  libraries: order_by
+  life: order_by
+  lifeEnhance: order_by
+  lifeMax: order_by
+  money: order_by
+  moneyMax: order_by
+  programmers: order_by
+  scripts: order_by
+  servers: order_by
+  users: order_by
+  usersMax: order_by
+}
+
+# aggregate sum on columns
+type bounty_sum_fields {
+  id: Int
+  libraries: Int
+  life: Int
+  lifeEnhance: smallint
+  lifeMax: Int
+  money: Int
+  moneyMax: Int
+  programmers: Int
+  scripts: Int
+  servers: Int
+  users: Int
+  usersMax: Int
+}
+
+# order by sum() on columns of table "bounty"
+input bounty_sum_order_by {
+  id: order_by
+  libraries: order_by
+  life: order_by
+  lifeEnhance: order_by
+  lifeMax: order_by
+  money: order_by
+  moneyMax: order_by
+  programmers: order_by
+  scripts: order_by
+  servers: order_by
+  users: order_by
+  usersMax: order_by
+}
+
+# update columns of table "bounty"
+enum bounty_update_column {
+  # column name
+  hurtLog
+
+  # column name
+  id
+
+  # column name
+  image
+
+  # column name
+  imageAlt
+
+  # column name
+  leads
+
+  # column name
+  libraries
+
+  # column name
+  life
+
+  # column name
+  lifeEnhance
+
+  # column name
+  lifeMax
+
+  # column name
+  money
+
+  # column name
+  moneyMax
+
+  # column name
+  programmers
+
+  # column name
+  scripts
+
+  # column name
+  servers
+
+  # column name
+  suits
+
+  # column name
+  tagLinks
+
+  # column name
+  tags
+
+  # column name
+  title
+
+  # column name
+  users
+
+  # column name
+  usersMax
+}
+
+# aggregate var_pop on columns
+type bounty_var_pop_fields {
+  id: Float
+  libraries: Float
+  life: Float
+  lifeEnhance: Float
+  lifeMax: Float
+  money: Float
+  moneyMax: Float
+  programmers: Float
+  scripts: Float
+  servers: Float
+  users: Float
+  usersMax: Float
+}
+
+# order by var_pop() on columns of table "bounty"
+input bounty_var_pop_order_by {
+  id: order_by
+  libraries: order_by
+  life: order_by
+  lifeEnhance: order_by
+  lifeMax: order_by
+  money: order_by
+  moneyMax: order_by
+  programmers: order_by
+  scripts: order_by
+  servers: order_by
+  users: order_by
+  usersMax: order_by
+}
+
+# aggregate var_samp on columns
+type bounty_var_samp_fields {
+  id: Float
+  libraries: Float
+  life: Float
+  lifeEnhance: Float
+  lifeMax: Float
+  money: Float
+  moneyMax: Float
+  programmers: Float
+  scripts: Float
+  servers: Float
+  users: Float
+  usersMax: Float
+}
+
+# order by var_samp() on columns of table "bounty"
+input bounty_var_samp_order_by {
+  id: order_by
+  libraries: order_by
+  life: order_by
+  lifeEnhance: order_by
+  lifeMax: order_by
+  money: order_by
+  moneyMax: order_by
+  programmers: order_by
+  scripts: order_by
+  servers: order_by
+  users: order_by
+  usersMax: order_by
+}
+
+# aggregate variance on columns
+type bounty_variance_fields {
+  id: Float
+  libraries: Float
+  life: Float
+  lifeEnhance: Float
+  lifeMax: Float
+  money: Float
+  moneyMax: Float
+  programmers: Float
+  scripts: Float
+  servers: Float
+  users: Float
+  usersMax: Float
+}
+
+# order by variance() on columns of table "bounty"
+input bounty_variance_order_by {
+  id: order_by
+  libraries: order_by
+  life: order_by
+  lifeEnhance: order_by
+  lifeMax: order_by
+  money: order_by
+  moneyMax: order_by
+  programmers: order_by
+  scripts: order_by
+  servers: order_by
+  users: order_by
+  usersMax: order_by
+}
+
+# expression to compare columns of type Int. All fields are combined with logical 'AND'.
+input Int_comparison_exp {
+  _eq: Int
+  _gt: Int
+  _gte: Int
+  _in: [Int!]
+  _is_null: Boolean
+  _lt: Int
+  _lte: Int
+  _neq: Int
+  _nin: [Int!]
+}
+
+scalar jsonb
+
+# expression to compare columns of type jsonb. All fields are combined with logical 'AND'.
+input jsonb_comparison_exp {
+  # is the column contained in the given json value
+  _contained_in: jsonb
+
+  # does the column contain the given json value at the top level
+  _contains: jsonb
+  _eq: jsonb
+  _gt: jsonb
+  _gte: jsonb
+
+  # does the string exist as a top-level key in the column
+  _has_key: String
+
+  # do all of these strings exist as top-level keys in the column
+  _has_keys_all: [String!]
+
+  # do any of these strings exist as top-level keys in the column
+  _has_keys_any: [String!]
+  _in: [jsonb!]
+  _is_null: Boolean
+  _lt: jsonb
+  _lte: jsonb
+  _neq: jsonb
+  _nin: [jsonb!]
+}
+
+# columns and relationships of "leads"
+type leads {
+  bounty: Int!
+  icon: String!
+  id: Int!
+  number: Int!
+}
+
+# aggregated selection of "leads"
+type leads_aggregate {
+  aggregate: leads_aggregate_fields
+  nodes: [leads!]!
+}
+
+# aggregate fields of "leads"
+type leads_aggregate_fields {
+  avg: leads_avg_fields
+  count(columns: [leads_select_column!], distinct: Boolean): Int
+  max: leads_max_fields
+  min: leads_min_fields
+  stddev: leads_stddev_fields
+  stddev_pop: leads_stddev_pop_fields
+  stddev_samp: leads_stddev_samp_fields
+  sum: leads_sum_fields
+  var_pop: leads_var_pop_fields
+  var_samp: leads_var_samp_fields
+  variance: leads_variance_fields
+}
+
+# order by aggregate values of table "leads"
+input leads_aggregate_order_by {
+  avg: leads_avg_order_by
+  count: order_by
+  max: leads_max_order_by
+  min: leads_min_order_by
+  stddev: leads_stddev_order_by
+  stddev_pop: leads_stddev_pop_order_by
+  stddev_samp: leads_stddev_samp_order_by
+  sum: leads_sum_order_by
+  var_pop: leads_var_pop_order_by
+  var_samp: leads_var_samp_order_by
+  variance: leads_variance_order_by
+}
+
+# input type for inserting array relation for remote table "leads"
+input leads_arr_rel_insert_input {
+  data: [leads_insert_input!]!
+  on_conflict: leads_on_conflict
+}
+
+# aggregate avg on columns
+type leads_avg_fields {
+  bounty: Float
+  id: Float
+  number: Float
+}
+
+# order by avg() on columns of table "leads"
+input leads_avg_order_by {
+  bounty: order_by
+  id: order_by
+  number: order_by
+}
+
+# Boolean expression to filter rows from the table "leads". All fields are combined with a logical 'AND'.
+input leads_bool_exp {
+  _and: [leads_bool_exp]
+  _not: leads_bool_exp
+  _or: [leads_bool_exp]
+  bounty: Int_comparison_exp
+  icon: String_comparison_exp
+  id: Int_comparison_exp
+  number: Int_comparison_exp
+}
+
+# unique or primary key constraints on table "leads"
+enum leads_constraint {
+  # unique or primary key constraint
+  leads_pkey
+}
+
+# input type for incrementing integer column in table "leads"
+input leads_inc_input {
+  bounty: Int
+  id: Int
+  number: Int
+}
+
+# input type for inserting data into table "leads"
+input leads_insert_input {
+  bounty: Int
+  icon: String
+  id: Int
+  number: Int
+}
+
+# aggregate max on columns
+type leads_max_fields {
+  bounty: Int
+  icon: String
+  id: Int
+  number: Int
+}
+
+# order by max() on columns of table "leads"
+input leads_max_order_by {
+  bounty: order_by
+  icon: order_by
+  id: order_by
+  number: order_by
+}
+
+# aggregate min on columns
+type leads_min_fields {
+  bounty: Int
+  icon: String
+  id: Int
+  number: Int
+}
+
+# order by min() on columns of table "leads"
+input leads_min_order_by {
+  bounty: order_by
+  icon: order_by
+  id: order_by
+  number: order_by
+}
+
+# response of any mutation on the table "leads"
+type leads_mutation_response {
+  # number of affected rows by the mutation
+  affected_rows: Int!
+
+  # data of the affected rows by the mutation
+  returning: [leads!]!
+}
+
+# input type for inserting object relation for remote table "leads"
+input leads_obj_rel_insert_input {
+  data: leads_insert_input!
+  on_conflict: leads_on_conflict
+}
+
+# on conflict condition type for table "leads"
+input leads_on_conflict {
+  constraint: leads_constraint!
+  update_columns: [leads_update_column!]!
+  where: leads_bool_exp
+}
+
+# ordering options when selecting data from "leads"
+input leads_order_by {
+  bounty: order_by
+  icon: order_by
+  id: order_by
+  number: order_by
+}
+
+# primary key columns input for table: "leads"
+input leads_pk_columns_input {
+  id: Int!
+}
+
+# select columns of table "leads"
+enum leads_select_column {
+  # column name
+  bounty
+
+  # column name
+  icon
+
+  # column name
+  id
+
+  # column name
+  number
+}
+
+# input type for updating data in table "leads"
+input leads_set_input {
+  bounty: Int
+  icon: String
+  id: Int
+  number: Int
+}
+
+# aggregate stddev on columns
+type leads_stddev_fields {
+  bounty: Float
+  id: Float
+  number: Float
+}
+
+# order by stddev() on columns of table "leads"
+input leads_stddev_order_by {
+  bounty: order_by
+  id: order_by
+  number: order_by
+}
+
+# aggregate stddev_pop on columns
+type leads_stddev_pop_fields {
+  bounty: Float
+  id: Float
+  number: Float
+}
+
+# order by stddev_pop() on columns of table "leads"
+input leads_stddev_pop_order_by {
+  bounty: order_by
+  id: order_by
+  number: order_by
+}
+
+# aggregate stddev_samp on columns
+type leads_stddev_samp_fields {
+  bounty: Float
+  id: Float
+  number: Float
+}
+
+# order by stddev_samp() on columns of table "leads"
+input leads_stddev_samp_order_by {
+  bounty: order_by
+  id: order_by
+  number: order_by
+}
+
+# aggregate sum on columns
+type leads_sum_fields {
+  bounty: Int
+  id: Int
+  number: Int
+}
+
+# order by sum() on columns of table "leads"
+input leads_sum_order_by {
+  bounty: order_by
+  id: order_by
+  number: order_by
+}
+
+# update columns of table "leads"
+enum leads_update_column {
+  # column name
+  bounty
+
+  # column name
+  icon
+
+  # column name
+  id
+
+  # column name
+  number
+}
+
+# aggregate var_pop on columns
+type leads_var_pop_fields {
+  bounty: Float
+  id: Float
+  number: Float
+}
+
+# order by var_pop() on columns of table "leads"
+input leads_var_pop_order_by {
+  bounty: order_by
+  id: order_by
+  number: order_by
+}
+
+# aggregate var_samp on columns
+type leads_var_samp_fields {
+  bounty: Float
+  id: Float
+  number: Float
+}
+
+# order by var_samp() on columns of table "leads"
+input leads_var_samp_order_by {
+  bounty: order_by
+  id: order_by
+  number: order_by
+}
+
+# aggregate variance on columns
+type leads_variance_fields {
+  bounty: Float
+  id: Float
+  number: Float
+}
+
+# order by variance() on columns of table "leads"
+input leads_variance_order_by {
+  bounty: order_by
+  id: order_by
+  number: order_by
+}
+
+# mutation root
+type mutation_root {
+  # delete data from the table: "bounty"
+  delete_bounty(
+    # filter the rows which have to be deleted
+    where: bounty_bool_exp!
+  ): bounty_mutation_response
+
+  # delete single row from the table: "bounty"
+  delete_bounty_by_pk(id: Int!): bounty
+
+  # delete data from the table: "leads"
+  delete_leads(
+    # filter the rows which have to be deleted
+    where: leads_bool_exp!
+  ): leads_mutation_response
+
+  # delete single row from the table: "leads"
+  delete_leads_by_pk(id: Int!): leads
+
+  # delete data from the table: "suits"
+  delete_suits(
+    # filter the rows which have to be deleted
+    where: suits_bool_exp!
+  ): suits_mutation_response
+
+  # delete single row from the table: "suits"
+  delete_suits_by_pk(id: Int!): suits
+
+  # insert data into the table: "bounty"
+  insert_bounty(
+    # the rows to be inserted
+    objects: [bounty_insert_input!]!
+
+    # on conflict condition
+    on_conflict: bounty_on_conflict
+  ): bounty_mutation_response
+
+  # insert a single row into the table: "bounty"
+  insert_bounty_one(
+    # the row to be inserted
+    object: bounty_insert_input!
+
+    # on conflict condition
+    on_conflict: bounty_on_conflict
+  ): bounty
+
+  # insert data into the table: "leads"
+  insert_leads(
+    # the rows to be inserted
+    objects: [leads_insert_input!]!
+
+    # on conflict condition
+    on_conflict: leads_on_conflict
+  ): leads_mutation_response
+
+  # insert a single row into the table: "leads"
+  insert_leads_one(
+    # the row to be inserted
+    object: leads_insert_input!
+
+    # on conflict condition
+    on_conflict: leads_on_conflict
+  ): leads
+
+  # insert data into the table: "suits"
+  insert_suits(
+    # the rows to be inserted
+    objects: [suits_insert_input!]!
+
+    # on conflict condition
+    on_conflict: suits_on_conflict
+  ): suits_mutation_response
+
+  # insert a single row into the table: "suits"
+  insert_suits_one(
+    # the row to be inserted
+    object: suits_insert_input!
+
+    # on conflict condition
+    on_conflict: suits_on_conflict
+  ): suits
+
+  # update data of the table: "bounty"
+  update_bounty(
+    # append existing jsonb value of filtered columns with new jsonb value
+    _append: bounty_append_input
+
+    # delete the field or element with specified path (for JSON arrays, negative integers count from the end)
+    _delete_at_path: bounty_delete_at_path_input
+
+    # delete the array element with specified index (negative integers count from
+    # the end). throws an error if top level container is not an array
+    _delete_elem: bounty_delete_elem_input
+
+    # delete key/value pair or string element. key/value pairs are matched based on their key value
+    _delete_key: bounty_delete_key_input
+
+    # increments the integer columns with given value of the filtered values
+    _inc: bounty_inc_input
+
+    # prepend existing jsonb value of filtered columns with new jsonb value
+    _prepend: bounty_prepend_input
+
+    # sets the columns of the filtered rows to the given values
+    _set: bounty_set_input
+
+    # filter the rows which have to be updated
+    where: bounty_bool_exp!
+  ): bounty_mutation_response
+
+  # update single row of the table: "bounty"
+  update_bounty_by_pk(
+    # append existing jsonb value of filtered columns with new jsonb value
+    _append: bounty_append_input
+
+    # delete the field or element with specified path (for JSON arrays, negative integers count from the end)
+    _delete_at_path: bounty_delete_at_path_input
+
+    # delete the array element with specified index (negative integers count from
+    # the end). throws an error if top level container is not an array
+    _delete_elem: bounty_delete_elem_input
+
+    # delete key/value pair or string element. key/value pairs are matched based on their key value
+    _delete_key: bounty_delete_key_input
+
+    # increments the integer columns with given value of the filtered values
+    _inc: bounty_inc_input
+
+    # prepend existing jsonb value of filtered columns with new jsonb value
+    _prepend: bounty_prepend_input
+
+    # sets the columns of the filtered rows to the given values
+    _set: bounty_set_input
+    pk_columns: bounty_pk_columns_input!
+  ): bounty
+
+  # update data of the table: "leads"
+  update_leads(
+    # increments the integer columns with given value of the filtered values
+    _inc: leads_inc_input
+
+    # sets the columns of the filtered rows to the given values
+    _set: leads_set_input
+
+    # filter the rows which have to be updated
+    where: leads_bool_exp!
+  ): leads_mutation_response
+
+  # update single row of the table: "leads"
+  update_leads_by_pk(
+    # increments the integer columns with given value of the filtered values
+    _inc: leads_inc_input
+
+    # sets the columns of the filtered rows to the given values
+    _set: leads_set_input
+    pk_columns: leads_pk_columns_input!
+  ): leads
+
+  # update data of the table: "suits"
+  update_suits(
+    # increments the integer columns with given value of the filtered values
+    _inc: suits_inc_input
+
+    # sets the columns of the filtered rows to the given values
+    _set: suits_set_input
+
+    # filter the rows which have to be updated
+    where: suits_bool_exp!
+  ): suits_mutation_response
+
+  # update single row of the table: "suits"
+  update_suits_by_pk(
+    # increments the integer columns with given value of the filtered values
+    _inc: suits_inc_input
+
+    # sets the columns of the filtered rows to the given values
+    _set: suits_set_input
+    pk_columns: suits_pk_columns_input!
+  ): suits
+}
+
+# column ordering options
+enum order_by {
+  # in the ascending order, nulls last
+  asc
+
+  # in the ascending order, nulls first
+  asc_nulls_first
+
+  # in the ascending order, nulls last
+  asc_nulls_last
+
+  # in the descending order, nulls first
+  desc
+
+  # in the descending order, nulls first
+  desc_nulls_first
+
+  # in the descending order, nulls last
+  desc_nulls_last
+}
+
+# query root
+type query_root {
+  # fetch data from the table: "bounty"
+  bounty(
+    # distinct select on columns
+    distinct_on: [bounty_select_column!]
+
+    # limit the number of rows returned
+    limit: Int
+
+    # skip the first n rows. Use only with order_by
+    offset: Int
+
+    # sort the rows by one or more columns
+    order_by: [bounty_order_by!]
+
+    # filter the rows returned
+    where: bounty_bool_exp
+  ): [bounty!]!
+
+  # fetch aggregated fields from the table: "bounty"
+  bounty_aggregate(
+    # distinct select on columns
+    distinct_on: [bounty_select_column!]
+
+    # limit the number of rows returned
+    limit: Int
+
+    # skip the first n rows. Use only with order_by
+    offset: Int
+
+    # sort the rows by one or more columns
+    order_by: [bounty_order_by!]
+
+    # filter the rows returned
+    where: bounty_bool_exp
+  ): bounty_aggregate!
+
+  # fetch data from the table: "bounty" using primary key columns
+  bounty_by_pk(id: Int!): bounty
+
+  # fetch data from the table: "leads"
+  leads(
+    # distinct select on columns
+    distinct_on: [leads_select_column!]
+
+    # limit the number of rows returned
+    limit: Int
+
+    # skip the first n rows. Use only with order_by
+    offset: Int
+
+    # sort the rows by one or more columns
+    order_by: [leads_order_by!]
+
+    # filter the rows returned
+    where: leads_bool_exp
+  ): [leads!]!
+
+  # fetch aggregated fields from the table: "leads"
+  leads_aggregate(
+    # distinct select on columns
+    distinct_on: [leads_select_column!]
+
+    # limit the number of rows returned
+    limit: Int
+
+    # skip the first n rows. Use only with order_by
+    offset: Int
+
+    # sort the rows by one or more columns
+    order_by: [leads_order_by!]
+
+    # filter the rows returned
+    where: leads_bool_exp
+  ): leads_aggregate!
+
+  # fetch data from the table: "leads" using primary key columns
+  leads_by_pk(id: Int!): leads
+
+  # fetch data from the table: "suits"
+  suits(
+    # distinct select on columns
+    distinct_on: [suits_select_column!]
+
+    # limit the number of rows returned
+    limit: Int
+
+    # skip the first n rows. Use only with order_by
+    offset: Int
+
+    # sort the rows by one or more columns
+    order_by: [suits_order_by!]
+
+    # filter the rows returned
+    where: suits_bool_exp
+  ): [suits!]!
+
+  # fetch aggregated fields from the table: "suits"
+  suits_aggregate(
+    # distinct select on columns
+    distinct_on: [suits_select_column!]
+
+    # limit the number of rows returned
+    limit: Int
+
+    # skip the first n rows. Use only with order_by
+    offset: Int
+
+    # sort the rows by one or more columns
+    order_by: [suits_order_by!]
+
+    # filter the rows returned
+    where: suits_bool_exp
+  ): suits_aggregate!
+
+  # fetch data from the table: "suits" using primary key columns
+  suits_by_pk(id: Int!): suits
+}
+
+scalar smallint
+
+# expression to compare columns of type smallint. All fields are combined with logical 'AND'.
+input smallint_comparison_exp {
+  _eq: smallint
+  _gt: smallint
+  _gte: smallint
+  _in: [smallint!]
+  _is_null: Boolean
+  _lt: smallint
+  _lte: smallint
+  _neq: smallint
+  _nin: [smallint!]
+}
+
+# expression to compare columns of type String. All fields are combined with logical 'AND'.
+input String_comparison_exp {
+  _eq: String
+  _gt: String
+  _gte: String
+  _ilike: String
+  _in: [String!]
+  _is_null: Boolean
+  _like: String
+  _lt: String
+  _lte: String
+  _neq: String
+  _nilike: String
+  _nin: [String!]
+  _nlike: String
+  _nsimilar: String
+  _similar: String
+}
+
+# subscription root
+type subscription_root {
+  # fetch data from the table: "bounty"
+  bounty(
+    # distinct select on columns
+    distinct_on: [bounty_select_column!]
+
+    # limit the number of rows returned
+    limit: Int
+
+    # skip the first n rows. Use only with order_by
+    offset: Int
+
+    # sort the rows by one or more columns
+    order_by: [bounty_order_by!]
+
+    # filter the rows returned
+    where: bounty_bool_exp
+  ): [bounty!]!
+
+  # fetch aggregated fields from the table: "bounty"
+  bounty_aggregate(
+    # distinct select on columns
+    distinct_on: [bounty_select_column!]
+
+    # limit the number of rows returned
+    limit: Int
+
+    # skip the first n rows. Use only with order_by
+    offset: Int
+
+    # sort the rows by one or more columns
+    order_by: [bounty_order_by!]
+
+    # filter the rows returned
+    where: bounty_bool_exp
+  ): bounty_aggregate!
+
+  # fetch data from the table: "bounty" using primary key columns
+  bounty_by_pk(id: Int!): bounty
+
+  # fetch data from the table: "leads"
+  leads(
+    # distinct select on columns
+    distinct_on: [leads_select_column!]
+
+    # limit the number of rows returned
+    limit: Int
+
+    # skip the first n rows. Use only with order_by
+    offset: Int
+
+    # sort the rows by one or more columns
+    order_by: [leads_order_by!]
+
+    # filter the rows returned
+    where: leads_bool_exp
+  ): [leads!]!
+
+  # fetch aggregated fields from the table: "leads"
+  leads_aggregate(
+    # distinct select on columns
+    distinct_on: [leads_select_column!]
+
+    # limit the number of rows returned
+    limit: Int
+
+    # skip the first n rows. Use only with order_by
+    offset: Int
+
+    # sort the rows by one or more columns
+    order_by: [leads_order_by!]
+
+    # filter the rows returned
+    where: leads_bool_exp
+  ): leads_aggregate!
+
+  # fetch data from the table: "leads" using primary key columns
+  leads_by_pk(id: Int!): leads
+
+  # fetch data from the table: "suits"
+  suits(
+    # distinct select on columns
+    distinct_on: [suits_select_column!]
+
+    # limit the number of rows returned
+    limit: Int
+
+    # skip the first n rows. Use only with order_by
+    offset: Int
+
+    # sort the rows by one or more columns
+    order_by: [suits_order_by!]
+
+    # filter the rows returned
+    where: suits_bool_exp
+  ): [suits!]!
+
+  # fetch aggregated fields from the table: "suits"
+  suits_aggregate(
+    # distinct select on columns
+    distinct_on: [suits_select_column!]
+
+    # limit the number of rows returned
+    limit: Int
+
+    # skip the first n rows. Use only with order_by
+    offset: Int
+
+    # sort the rows by one or more columns
+    order_by: [suits_order_by!]
+
+    # filter the rows returned
+    where: suits_bool_exp
+  ): suits_aggregate!
+
+  # fetch data from the table: "suits" using primary key columns
+  suits_by_pk(id: Int!): suits
+}
+
+# columns and relationships of "suits"
+type suits {
+  bounty: Int!
+  icon: String!
+  id: Int!
+}
+
+# aggregated selection of "suits"
+type suits_aggregate {
+  aggregate: suits_aggregate_fields
+  nodes: [suits!]!
+}
+
+# aggregate fields of "suits"
+type suits_aggregate_fields {
+  avg: suits_avg_fields
+  count(columns: [suits_select_column!], distinct: Boolean): Int
+  max: suits_max_fields
+  min: suits_min_fields
+  stddev: suits_stddev_fields
+  stddev_pop: suits_stddev_pop_fields
+  stddev_samp: suits_stddev_samp_fields
+  sum: suits_sum_fields
+  var_pop: suits_var_pop_fields
+  var_samp: suits_var_samp_fields
+  variance: suits_variance_fields
+}
+
+# order by aggregate values of table "suits"
+input suits_aggregate_order_by {
+  avg: suits_avg_order_by
+  count: order_by
+  max: suits_max_order_by
+  min: suits_min_order_by
+  stddev: suits_stddev_order_by
+  stddev_pop: suits_stddev_pop_order_by
+  stddev_samp: suits_stddev_samp_order_by
+  sum: suits_sum_order_by
+  var_pop: suits_var_pop_order_by
+  var_samp: suits_var_samp_order_by
+  variance: suits_variance_order_by
+}
+
+# input type for inserting array relation for remote table "suits"
+input suits_arr_rel_insert_input {
+  data: [suits_insert_input!]!
+  on_conflict: suits_on_conflict
+}
+
+# aggregate avg on columns
+type suits_avg_fields {
+  bounty: Float
+  id: Float
+}
+
+# order by avg() on columns of table "suits"
+input suits_avg_order_by {
+  bounty: order_by
+  id: order_by
+}
+
+# Boolean expression to filter rows from the table "suits". All fields are combined with a logical 'AND'.
+input suits_bool_exp {
+  _and: [suits_bool_exp]
+  _not: suits_bool_exp
+  _or: [suits_bool_exp]
+  bounty: Int_comparison_exp
+  icon: String_comparison_exp
+  id: Int_comparison_exp
+}
+
+# unique or primary key constraints on table "suits"
+enum suits_constraint {
+  # unique or primary key constraint
+  suits_pkey
+}
+
+# input type for incrementing integer column in table "suits"
+input suits_inc_input {
+  bounty: Int
+  id: Int
+}
+
+# input type for inserting data into table "suits"
+input suits_insert_input {
+  bounty: Int
+  icon: String
+  id: Int
+}
+
+# aggregate max on columns
+type suits_max_fields {
+  bounty: Int
+  icon: String
+  id: Int
+}
+
+# order by max() on columns of table "suits"
+input suits_max_order_by {
+  bounty: order_by
+  icon: order_by
+  id: order_by
+}
+
+# aggregate min on columns
+type suits_min_fields {
+  bounty: Int
+  icon: String
+  id: Int
+}
+
+# order by min() on columns of table "suits"
+input suits_min_order_by {
+  bounty: order_by
+  icon: order_by
+  id: order_by
+}
+
+# response of any mutation on the table "suits"
+type suits_mutation_response {
+  # number of affected rows by the mutation
+  affected_rows: Int!
+
+  # data of the affected rows by the mutation
+  returning: [suits!]!
+}
+
+# input type for inserting object relation for remote table "suits"
+input suits_obj_rel_insert_input {
+  data: suits_insert_input!
+  on_conflict: suits_on_conflict
+}
+
+# on conflict condition type for table "suits"
+input suits_on_conflict {
+  constraint: suits_constraint!
+  update_columns: [suits_update_column!]!
+  where: suits_bool_exp
+}
+
+# ordering options when selecting data from "suits"
+input suits_order_by {
+  bounty: order_by
+  icon: order_by
+  id: order_by
+}
+
+# primary key columns input for table: "suits"
+input suits_pk_columns_input {
+  id: Int!
+}
+
+# select columns of table "suits"
+enum suits_select_column {
+  # column name
+  bounty
+
+  # column name
+  icon
+
+  # column name
+  id
+}
+
+# input type for updating data in table "suits"
+input suits_set_input {
+  bounty: Int
+  icon: String
+  id: Int
+}
+
+# aggregate stddev on columns
+type suits_stddev_fields {
+  bounty: Float
+  id: Float
+}
+
+# order by stddev() on columns of table "suits"
+input suits_stddev_order_by {
+  bounty: order_by
+  id: order_by
+}
+
+# aggregate stddev_pop on columns
+type suits_stddev_pop_fields {
+  bounty: Float
+  id: Float
+}
+
+# order by stddev_pop() on columns of table "suits"
+input suits_stddev_pop_order_by {
+  bounty: order_by
+  id: order_by
+}
+
+# aggregate stddev_samp on columns
+type suits_stddev_samp_fields {
+  bounty: Float
+  id: Float
+}
+
+# order by stddev_samp() on columns of table "suits"
+input suits_stddev_samp_order_by {
+  bounty: order_by
+  id: order_by
+}
+
+# aggregate sum on columns
+type suits_sum_fields {
+  bounty: Int
+  id: Int
+}
+
+# order by sum() on columns of table "suits"
+input suits_sum_order_by {
+  bounty: order_by
+  id: order_by
+}
+
+# update columns of table "suits"
+enum suits_update_column {
+  # column name
+  bounty
+
+  # column name
+  icon
+
+  # column name
+  id
+}
+
+# aggregate var_pop on columns
+type suits_var_pop_fields {
+  bounty: Float
+  id: Float
+}
+
+# order by var_pop() on columns of table "suits"
+input suits_var_pop_order_by {
+  bounty: order_by
+  id: order_by
+}
+
+# aggregate var_samp on columns
+type suits_var_samp_fields {
+  bounty: Float
+  id: Float
+}
+
+# order by var_samp() on columns of table "suits"
+input suits_var_samp_order_by {
+  bounty: order_by
+  id: order_by
+}
+
+# aggregate variance on columns
+type suits_variance_fields {
+  bounty: Float
+  id: Float
+}
+
+# order by variance() on columns of table "suits"
+input suits_variance_order_by {
+  bounty: order_by
+  id: order_by
+}
+
