@@ -19,7 +19,6 @@
     "noEmit": true,
     "jsx": "react",
     "typeRoots": [
-      "src/customTypings",
       "node_modules/@types"
     ],
   },

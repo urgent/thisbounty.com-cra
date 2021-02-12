@@ -1,11 +1,12 @@
-import React, { ReactChildren } from 'react'
-import { ID } from './ID'
-import { Lifebar } from './Lifebar'
-import { Moneybar } from './Moneybar'
-import { Userbar } from './Userbar'
-import { Resource } from './Resource'
-import { Link } from './Link'
-import styled from 'styled-components'
+import React, { ReactChildren } from "react";
+import { ID } from "./ID";
+import { Lifebar } from "./Lifebar";
+import { Moneybar } from "./Moneybar";
+import { Userbar } from "./Userbar";
+import { Resource } from "./Resource";
+import { Link } from "./Link";
+import styled from "styled-components";
+import { graphql } from "babel-plugin-relay/macro";
 
 const Card = styled.div`
   display: grid;
@@ -79,7 +80,7 @@ const Card = styled.div`
     align-items: flex-end;
     margin-right: 4px;
   }
-`
+`;
 
 const TitleBar = styled.div`
   margin-left: 5px;
@@ -104,45 +105,69 @@ const TitleBar = styled.div`
     height: 1.2rem;
     text-align: center;
   }
-`
+`;
 
 const ResourceBar = styled.div`
   display: flex;
   width: 165px;
   font-size: 0.8rem;
   justify-content: space-evenly;
-`
+`;
 
 const LinkBar = styled.div`
   display: flex;
   width: 170px;
   font-size: 1rem;
   margin-left: 5px;
-`
+`;
 
-type Attributes = {
-  id: number
-  title: string
-  image?: string
-  imageAlt?: string
-  life: number
-  lifeMax: number
-  lifeEnhance?: boolean
-  money: number
-  moneyMax: number
-  users: number
-  usersMax: number
-  programmers: number
-  servers: number
-  scripts: number
-  libraries: number
-  tags: string[]
-  tagLinks: string[]
-  hurtLog?: string[]
-  children?: ReactChildren
+const BountyQuery = graphql`
+  query BountyQuery {
+    bounty {
+      id
+      title
+      image
+      imageAlt
+      life
+      lifeMax
+      money
+      moneyMax
+      users
+      usersMax
+      programmers
+      servers
+      scripts
+      libraries
+      tags
+      tagLinks
+      hurtLog
+    }
+  }
+`;
+
+interface Props {
+  id: number;
+  title: string;
+  image?: string;
+  imageAlt?: string;
+  life: number;
+  lifeMax: number;
+  lifeEnhance?: boolean;
+  money: number;
+  moneyMax: number;
+  users: number;
+  usersMax: number;
+  programmers: number;
+  servers: number;
+  scripts: number;
+  libraries: number;
+  tags: string[];
+  tagLinks: string[];
+  hurtLog?: string[];
+  children?: ReactChildren;
 }
 
-export function Bounty ({
+export function Bounty({
   id,
   title,
   image,
@@ -161,13 +186,13 @@ export function Bounty ({
   tags,
   tagLinks,
   hurtLog,
-  children
-}: Attributes) {
+  children,
+}: Props) {
   return (
-    <Card className='bounty'>
-      <div className='shadow' />
+    <Card className="bounty">
+      <div className="shadow" />
       <img src={image} alt={imageAlt} />
-      <div className='stats'>
+      <div className="stats">
         <TitleBar>
           <h2>{title}</h2>
           <ID value={id} />
@@ -176,10 +201,10 @@ export function Bounty ({
         <Moneybar money={money} max={moneyMax} />
         <Userbar users={users} max={usersMax} />
         <ResourceBar>
-          <Resource icon='programmers' count={programmers} />
-          <Resource icon='servers' count={servers} />
-          <Resource icon='scripts' count={scripts} />
-          <Resource icon='libraries' count={libraries} />
+          <Resource icon="programmers" count={programmers} />
+          <Resource icon="servers" count={servers} />
+          <Resource icon="scripts" count={scripts} />
+          <Resource icon="libraries" count={libraries} />
         </ResourceBar>
         <LinkBar>
           {tags.map((tag, index) => (
@@ -189,5 +214,5 @@ export function Bounty ({
         {children}
       </div>
     </Card>
-  )
+  );
 }

@@ -1,44 +1,39 @@
-/**
- * @flow
- */
-
+/* tslint:disable */
 /* eslint-disable */
+// @ts-nocheck
 
-'use strict';
+import { ConcreteRequest } from "relay-runtime";
+export type BountyQueryVariables = {};
+export type BountyQueryResponse = {
+    readonly bounty: ReadonlyArray<{
+        readonly id: number;
+        readonly title: string;
+        readonly image: string;
+        readonly imageAlt: string;
+        readonly life: number;
+        readonly lifeMax: number;
+        readonly money: number;
+        readonly moneyMax: number;
+        readonly users: number;
+        readonly usersMax: number;
+        readonly programmers: number;
+        readonly servers: number;
+        readonly scripts: number;
+        readonly libraries: number;
+        readonly tags: unknown;
+        readonly tagLinks: unknown;
+        readonly hurtLog: unknown;
+    }>;
+};
+export type BountyQuery = {
+    readonly response: BountyQueryResponse;
+    readonly variables: BountyQueryVariables;
+};
 
-/*::
-import type { ConcreteRequest } from 'relay-runtime';
-export type AppQueryVariables = {||};
-export type AppQueryResponse = {|
-  +bounty: $ReadOnlyArray<{|
-    +id: number,
-    +title: string,
-    +image: string,
-    +imageAlt: string,
-    +life: number,
-    +lifeMax: number,
-    +money: number,
-    +moneyMax: number,
-    +users: number,
-    +usersMax: number,
-    +programmers: number,
-    +servers: number,
-    +scripts: number,
-    +libraries: number,
-    +tags: any,
-    +tagLinks: any,
-    +hurtLog: any,
-  |}>
-|};
-export type AppQuery = {|
-  variables: AppQueryVariables,
-  response: AppQueryResponse,
-|};
-*/
 
 
 /*
-query AppQuery {
+query BountyQuery {
   bounty {
     id
     title
@@ -61,7 +56,7 @@ query AppQuery {
 }
 */
 
-const node/*: ConcreteRequest*/ = (function(){
+const node: ConcreteRequest = (function(){
 var v0 = [
   {
     "alias": null,
@@ -199,7 +194,7 @@ return {
     "argumentDefinitions": [],
     "kind": "Fragment",
     "metadata": null,
-    "name": "AppQuery",
+    "name": "BountyQuery",
     "selections": (v0/*: any*/),
     "type": "query_root",
     "abstractKey": null
@@ -208,20 +203,18 @@ return {
   "operation": {
     "argumentDefinitions": [],
     "kind": "Operation",
-    "name": "AppQuery",
+    "name": "BountyQuery",
     "selections": (v0/*: any*/)
   },
   "params": {
-    "cacheID": "4b391acbc35fad2d5d20de65e6f328ce",
+    "cacheID": "04d1df2b261f34709f7c07a848551aad",
     "id": null,
     "metadata": {},
-    "name": "AppQuery",
+    "name": "BountyQuery",
     "operationKind": "query",
-    "text": "query AppQuery {\n  bounty {\n    id\n    title\n    image\n    imageAlt\n    life\n    lifeMax\n    money\n    moneyMax\n    users\n    usersMax\n    programmers\n    servers\n    scripts\n    libraries\n    tags\n    tagLinks\n    hurtLog\n  }\n}\n"
+    "text": "query BountyQuery {\n  bounty {\n    id\n    title\n    image\n    imageAlt\n    life\n    lifeMax\n    money\n    moneyMax\n    users\n    usersMax\n    programmers\n    servers\n    scripts\n    libraries\n    tags\n    tagLinks\n    hurtLog\n  }\n}\n"
   }
 };
 })();
-// prettier-ignore
-(node/*: any*/).hash = '7ea92f4f08e8bda71fa411623a69cbae';
-
-module.exports = node;
+(node as any).hash = '0f39d9c309adecd16bcd47250b10a285';
+export default node;
