@@ -183,7 +183,7 @@ export function Bounty({
         </ResourceBar>
         <LinkBar>
           {tags.map((tag, index) => (
-            <Link icon={tag} href={tagLinks[index]} />
+            <Link icon={tag} href={tagLinks[index]} key={index} />
           ))}
         </LinkBar>
         {children}
