@@ -267,7 +267,7 @@ exports[`Bounty renders correctly 1`] = `
         width="170"
       >
         <g
-          clip-path="url(#clip0)"
+          clipPath="url(#clip0)"
           id="g121"
           transform="translate(-12,-13.088235)"
         >
@@ -288,7 +288,7 @@ exports[`Bounty renders correctly 1`] = `
               d="m 14,13 h -1 v 9 h NaN a 4.5,4.5 0 0 0 0,-9 z"
               id="path117"
               stroke="#ffffff"
-              stroke-width="2"
+              strokeWidth="2"
             />
           </g>
         </g>
@@ -305,12 +305,12 @@ exports[`Bounty renders correctly 1`] = `
           >
             <stop
               id="stop927"
-              stop-color="#0000FF"
+              stopColor="#0000FF"
             />
             <stop
               id="stop929"
               offset="1"
-              stop-color="#3377FF"
+              stopColor="#3377FF"
             />
           </linearGradient>
           <clipPath
