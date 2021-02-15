@@ -10,10 +10,10 @@ Computer programming experience. "done it before". Take an entire project from s
 
 Features:
 
-1.  Personal workspace: Fast response to clients, test and preview new features.
-2.  Frontend, server, build, platforms: Provisioned, internal tools ready to use on new projects.
-3.  Test leading technology: Something new launches, have the infrastructure to try it out before using it for clients.
-4.  Potential sales: Start with a broad sales funnel, maybe even negative, spend to find context and intent, convert to client.
+1. Personal workspace: Fast response to clients, test and preview new features.
+2. Frontend, server, build, platforms: Provisioned, internal tools ready to use on new projects.
+3. Test leading technology: Something new launches, have the infrastructure to try it out before using it for clients.
+4. Potential sales: Start with a broad sales funnel, maybe even negative, spend to find context and intent, convert to client.
 
 ## Principles
 
