@@ -61,7 +61,7 @@ Security nightmare. Easier to pay people.
 
 1. Done it before: `Core tech done before. Build experience with this project.`
 2. No customs: `React, relay, styled-components, React Router. Standalone components, low dependencies. Removed relay experimental.`
-3. Create and track goals: `Deadline of 26th February`
+3. Create and track goals: `Deadline of 26th February for "done it before".`
 4. Focus on the core business: `Build experience for future clients`
 5. Build clear rules outside of the tech. `See Rules`
 6. List everything not core business. At least you are aware. `See ARCHITECTURE.md`
@@ -76,18 +76,18 @@ Security nightmare. Easier to pay people.
 
 ## Rules
 
-1. Growth: 5 new bids prior to work on thisbounty.com
-2. No surprises: Work for free before agreeing to terms. State that in bid to increase conversions.
-3. Time: Keep an itinerary before work
-4. Track: At close, reflect on each workday
-5. Plan: After reflection, visualize next workday
-6. Focus: Pomodoro on while working, no exceptions
-7. Perfection: If it's not perfect, get rid of it, move on
+1. Read this first on start of new workday.
+2. Growth: 5 new bids prior to work on thisbounty.com
+3. No surprises: Work for free before agreeing to terms. State that in bid to increase conversions.
+4. Time: Keep an itinerary before work
+5. Track: At close, reflect on each workday
+6. Plan: After reflection, visualize next workday
+7. Focus: Pomodoro on while working, no exceptions
+8. Perfection: If it's not perfect, get rid of it, move on
 
 ## Navigation
 
-1. Leads have bounties of their own, to suggest a workflow.
-2. Edit values through hasura until public release.
+Click a bounty. Provision resources popup, like Hasura does with Heroku
 
 ## Public Release
 
