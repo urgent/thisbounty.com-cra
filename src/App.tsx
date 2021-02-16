@@ -14,7 +14,7 @@ const Flag = styled.div`
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-  grid-template-rows: [titlebar] 2rem [app] 1fr;
+  grid-template-rows: [titlebar] 2rem [app] 1fr [footer] 3rem;
   grid-template-columns: 1fr;
 `;
 
@@ -22,7 +22,7 @@ const Main = styled.main`
   background: #212529;
   width: 320px;
   justify-self: center;
-  margin-top: 1rem;
+  padding-top: 1rem;
 `;
 
 const TitleBar = styled.header`
@@ -33,6 +33,20 @@ const TitleBar = styled.header`
   font-size: 0.8rem;
   padding: 0.5rem 0 0 1rem;
   text-align: left;
+
+  a {
+    color: #fff;
+  }
+`;
+
+const Footer = styled.footer`
+  margin: 0;
+  background: #212529;
+  grid-row: footer;
+  width: 100%;
+  font-size: 0.8rem;
+  padding: 0rem 0 0.5rem 1rem;
+  text-align: center;
 
   a {
     color: #fff;
@@ -88,7 +102,7 @@ function App() {
           }}
         />
       </Main>
-      <footer>
+      <Footer>
         <ul>
           <li>
             <a
@@ -99,7 +113,7 @@ function App() {
             </a>
           </li>
         </ul>
-      </footer>
+      </Footer>
     </Flag>
   );
 }
