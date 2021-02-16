@@ -55,7 +55,7 @@ const Footer = styled.footer`
 
 const AppQuery = graphql`
   query AppQuery {
-    bounty {
+    bounty(order_by: { bounty_id: asc }) {
       bounty_id
       title
       image

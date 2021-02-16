@@ -35,7 +35,7 @@ export type AppQuery = {
 
 /*
 query AppQuery {
-  bounty {
+  bounty(order_by: {bounty_id: asc}) {
     bounty_id
     title
     image
@@ -62,7 +62,15 @@ const node: ConcreteRequest = (function(){
 var v0 = [
   {
     "alias": null,
-    "args": null,
+    "args": [
+      {
+        "kind": "Literal",
+        "name": "order_by",
+        "value": {
+          "bounty_id": "asc"
+        }
+      }
+    ],
     "concreteType": "bounty",
     "kind": "LinkedField",
     "name": "bounty",
@@ -195,7 +203,7 @@ var v0 = [
         "storageKey": null
       }
     ],
-    "storageKey": null
+    "storageKey": "bounty(order_by:{\"bounty_id\":\"asc\"})"
   }
 ];
 return {
@@ -216,14 +224,14 @@ return {
     "selections": (v0/*: any*/)
   },
   "params": {
-    "cacheID": "3caf6bfacae8414b43c987c0516af8f6",
+    "cacheID": "b2621875843124fa37833a35cf3fea07",
     "id": null,
     "metadata": {},
     "name": "AppQuery",
     "operationKind": "query",
-    "text": "query AppQuery {\n  bounty {\n    bounty_id\n    title\n    image\n    imageAlt\n    life\n    lifeMax\n    lifeEnhance\n    money\n    moneyMax\n    users\n    usersMax\n    programmers\n    servers\n    scripts\n    libraries\n    tags\n    tagLinks\n    hurtLog\n  }\n}\n"
+    "text": "query AppQuery {\n  bounty(order_by: {bounty_id: asc}) {\n    bounty_id\n    title\n    image\n    imageAlt\n    life\n    lifeMax\n    lifeEnhance\n    money\n    moneyMax\n    users\n    usersMax\n    programmers\n    servers\n    scripts\n    libraries\n    tags\n    tagLinks\n    hurtLog\n  }\n}\n"
   }
 };
 })();
-(node as any).hash = '70c3c573fe7639e531f14c01679b6756';
+(node as any).hash = '9087a7ff17e2a6e8827f9918248147e2';
 export default node;
