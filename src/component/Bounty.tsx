@@ -129,7 +129,7 @@ interface Props {
   imageAlt?: string;
   life: number;
   lifeMax: number;
-  lifeEnhance?: boolean;
+  lifeEnhance?: number;
   money: number;
   moneyMax: number;
   users: number;

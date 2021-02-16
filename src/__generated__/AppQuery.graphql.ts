@@ -12,6 +12,7 @@ export type AppQueryResponse = {
         readonly imageAlt: string;
         readonly life: number;
         readonly lifeMax: number;
+        readonly lifeEnhance: unknown;
         readonly money: number;
         readonly moneyMax: number;
         readonly users: number;
@@ -41,6 +42,7 @@ query AppQuery {
     imageAlt
     life
     lifeMax
+    lifeEnhance
     money
     moneyMax
     users
@@ -106,6 +108,13 @@ var v0 = [
         "args": null,
         "kind": "ScalarField",
         "name": "lifeMax",
+        "storageKey": null
+      },
+      {
+        "alias": null,
+        "args": null,
+        "kind": "ScalarField",
+        "name": "lifeEnhance",
         "storageKey": null
       },
       {
@@ -207,14 +216,14 @@ return {
     "selections": (v0/*: any*/)
   },
   "params": {
-    "cacheID": "bea630c69d867bfc1a87af92aed7e775",
+    "cacheID": "3caf6bfacae8414b43c987c0516af8f6",
     "id": null,
     "metadata": {},
     "name": "AppQuery",
     "operationKind": "query",
-    "text": "query AppQuery {\n  bounty {\n    bounty_id\n    title\n    image\n    imageAlt\n    life\n    lifeMax\n    money\n    moneyMax\n    users\n    usersMax\n    programmers\n    servers\n    scripts\n    libraries\n    tags\n    tagLinks\n    hurtLog\n  }\n}\n"
+    "text": "query AppQuery {\n  bounty {\n    bounty_id\n    title\n    image\n    imageAlt\n    life\n    lifeMax\n    lifeEnhance\n    money\n    moneyMax\n    users\n    usersMax\n    programmers\n    servers\n    scripts\n    libraries\n    tags\n    tagLinks\n    hurtLog\n  }\n}\n"
   }
 };
 })();
-(node as any).hash = 'a46bc804d1518c579edc8cf58e1aa4be';
+(node as any).hash = '70c3c573fe7639e531f14c01679b6756';
 export default node;

@@ -62,6 +62,7 @@ const AppQuery = graphql`
       imageAlt
       life
       lifeMax
+      lifeEnhance
       money
       moneyMax
       users
