@@ -53,7 +53,7 @@ export function Userbar({
             <path
               fill="url(#paint1_linear)"
               d={`m 14,14 h ${
-                (users / max) * 15 * max
+                (users / max) * 14 * max
               } c 5.059,-0.106 4.081,8.083 -0.793,7 H 14 Z`}
               id="path115"
               style={{ fill: "url(#paint1_linear)" }}
@@ -61,7 +61,7 @@ export function Userbar({
             <path
               stroke="#ffffff"
               strokeWidth="2"
-              d={`m 14,13 h -1 v 9 h ${15 * max - 0.5} a 4.5,4.5 0 0 0 0,-9 z`}
+              d={`m 14,13 h -1 v 9 h ${14 * max - 0.5} a 4.5,4.5 0 0 0 0,-9 z`}
               id="path117"
             />
           </g>

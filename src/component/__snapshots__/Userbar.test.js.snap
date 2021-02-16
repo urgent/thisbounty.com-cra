@@ -49,7 +49,7 @@ exports[`Userbar renders correctly 1`] = `
           }
         />
         <path
-          d="m 14,13 h -1 v 9 h 1499.5 a 4.5,4.5 0 0 0 0,-9 z"
+          d="m 14,13 h -1 v 9 h 1399.5 a 4.5,4.5 0 0 0 0,-9 z"
           id="path117"
           stroke="#ffffff"
           strokeWidth="2"
@@ -130,7 +130,7 @@ exports[`Userbar renders correctly 2`] = `
         id="g119"
       >
         <path
-          d="m 14,14 h 1500 c 5.059,-0.106 4.081,8.083 -0.793,7 H 14 Z"
+          d="m 14,14 h 1400 c 5.059,-0.106 4.081,8.083 -0.793,7 H 14 Z"
           fill="url(#paint1_linear)"
           id="path115"
           style={
@@ -140,7 +140,7 @@ exports[`Userbar renders correctly 2`] = `
           }
         />
         <path
-          d="m 14,13 h -1 v 9 h 1499.5 a 4.5,4.5 0 0 0 0,-9 z"
+          d="m 14,13 h -1 v 9 h 1399.5 a 4.5,4.5 0 0 0 0,-9 z"
           id="path117"
           stroke="#ffffff"
           strokeWidth="2"
@@ -221,7 +221,7 @@ exports[`Userbar renders correctly 3`] = `
         id="g119"
       >
         <path
-          d="m 14,14 h 120 c 5.059,-0.106 4.081,8.083 -0.793,7 H 14 Z"
+          d="m 14,14 h 112.00000000000001 c 5.059,-0.106 4.081,8.083 -0.793,7 H 14 Z"
           fill="url(#paint1_linear)"
           id="path115"
           style={
@@ -231,7 +231,7 @@ exports[`Userbar renders correctly 3`] = `
           }
         />
         <path
-          d="m 14,13 h -1 v 9 h 149.5 a 4.5,4.5 0 0 0 0,-9 z"
+          d="m 14,13 h -1 v 9 h 139.5 a 4.5,4.5 0 0 0 0,-9 z"
           id="path117"
           stroke="#ffffff"
           strokeWidth="2"
