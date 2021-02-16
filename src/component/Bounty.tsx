@@ -51,7 +51,9 @@ const Card = styled.div`
 
   .lifebar {
     grid-row: life;
-    margin-left: 5px;
+    margin-left: 3px;
+    margin-left: 3px;
+    max-width: 157px;
   }
 
   .money {
