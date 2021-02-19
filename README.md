@@ -21,15 +21,16 @@ Features:
 2. No customs: Make it look like the manual as close as possible.
 3. Goals: Create, track with a strong and defined focus.
 4. Focus on the core business: How does it make money? How do I get paid?
-5. List everything not core business. At least you are aware.
-6. Fix bugs, add features: Don't start with "change the world". First find an existing problem and fix it.
-7. No hot fixes: Scrap the entire thing on unforseen problems. Don't want to solve one problem only to create two more.
-8. Use spreadsheets, IDEs, version control, database admins, monitoring, alerts instead of custom admins and inner platforms.
-9. Users expect robust features: If the user wants a sort, and there's no sort, dump data to Excel and scrap your custom work.
-10. Either don't do it, or do it full effort.
-11. Quick launch: Even if it's just a newsletter signup.
-12. Do not pay for advertising: Get clients instead, and share.
-13. Walk away: Leave it for others to build. Be happy it got built. Sometimes it's the fastest way.
+5. Build clear rules outside of the tech.
+6. List everything not core business. At least you are aware.
+7. Fix bugs, add features: Don't start with "change the world". First find an existing problem and fix it.
+8. No hot fixes: Scrap the entire thing on unforseen problems. Don't want to solve one problem only to create two more.
+9. Use spreadsheets, IDEs, version control, database admins, monitoring, alerts instead of custom admins and inner platforms.
+10. Users expect robust features: If the user wants a sort, and there's no sort, dump data to Excel and scrap your custom work.
+11. Either don't do it, or do it full effort.
+12. Quick launch: Even if it's just a newsletter signup.
+13. Do not pay for advertising: Get clients instead, and share.
+14. Walk away: Leave it for others to build. Be happy it got built. Sometimes it's the fastest way.
 
 ## User Persona
 
@@ -60,14 +61,14 @@ Security nightmare. Easier to pay people.
 ## Application of thisbounty.com
 
 1. Done it before: `Core tech done before. Build experience with this project.`
-2. No customs: `React, relay, styled-components, React Router. Standalone components, low dependencies. Removed relay experimental.`
-3. Create and track goals: `Deadline of 26th February for "done it before".`
+2. No customs: `React, relay, styled-components. Removed relay experimental. No next.js, too many cross cuts`
+3. Goals: `Deadline of 26th February for "done it before".`
 4. Focus on the core business: `Build experience for future clients`
 5. Build clear rules outside of the tech. `See Rules`
 6. List everything not core business. At least you are aware. `See ARCHITECTURE.md`
-7. Fix bugs, add features: `This is my "done it before". Standard procedures. Find all the hidden pain points`
+7. Fix bugs, add features: `Bug: Haven't "done it before." Feature: Provisioning when clicking bounty.`
 8. No hot fixes: `Focus on "done it before" Then worry about conversions`
-9. Use IDEs and version control instead of inner platforms. `No frontend mutations. Change through Hasura`
+9. Use spreadsheets, IDEs and version control instead of inner platforms. `No frontend mutations. Change through Hasura`
 10. Users expect robust features: `Visualization only. No conversion`
 11. Either don't do it, or do it full effort. `Keeping features minimal. Not afraid to scrap entire thing`
 12. Quick launch: `Launched with an excel sheet`
@@ -91,11 +92,13 @@ Click a bounty. Provision resources popup, like Hasura does with Heroku
 
 ## Public Release
 
-Conversion call to action. Allow users to commission new work. Popup in bottom middle. Show goals, principles, like focus on core business.
+2/26, hire someone to work on thisbounty.com
 
-Automate provisioning. <-- Do that first, like Hasura did with Heroku
+Actions, start with text chat on left side when clicking goals, principles.
 
-Open up a bounty, allow user to type. Select existing bounties and build provisioning.
+Move onto provisioning, like Hasura does with Heroku.
+
+If someone wants new work, they can open an issue on github. Make sure I'm notified.
 
 ## Goals
 
