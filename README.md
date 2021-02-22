@@ -81,7 +81,7 @@ Security nightmare. Easier to pay people.
 2. Growth: 5 new bids prior to work on thisbounty.com
 3. No surprises: Work for free before agreeing to terms. State that in bid to increase conversions.
 4. Time: Keep an itinerary before work
-5. Track: At close, reflect on each workday
+5. Track: At close, reflect on each workday. Keep a list of goals. Work backwards from deadline.
 6. Plan: After reflection, visualize next workday
 7. Focus: Pomodoro on while working, no exceptions
 8. Perfection: If it's not perfect, get rid of it, move on
