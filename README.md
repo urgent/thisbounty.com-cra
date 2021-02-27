@@ -142,9 +142,9 @@ Add Netlify identity.
 | ~~Get a client~~                                           | One month | Failed                   |
 | ~~Follow up with past clients~~                            | One time  | ~~Production~~ Done!     |
 
-## Past Work:
+## Past Work
 
-### 2/26:
+### 2/26
 
 Goals:
 
