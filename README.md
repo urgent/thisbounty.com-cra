@@ -137,11 +137,11 @@ Add Netlify identity.
 | One pomodoro                                               | 2/27      | -                                   |
 | Clockify                                                   | 2/27      | -                                   |
 | Hire programmers                                           | 3/5       | Profitable work ready               |
-| Add Netlify identity                                       | 3/2       | Do it in one day                    |
+| ~~Add Netlify identity~~                                   | 3/2       | Done!                               |
 | Flip a project                                             | 3/31      | Projects? buyers?                   |
 | Salvage a project                                          | 3/31      | Launch? Earn? Fast work?            |
 | Navigation                                                 | 3/31      | Data, Filter, Click, Router/Back    |
-| Comission work                                             | 4/31      | Bomb button, add, TTL, money, users |
+| Comissioned work                                           | 4/31      | Bomb button, add, TTL, money, users |
 | ~~Build thisbounty.com~~                                   | One month | Failed                              |
 | ~~Get a client~~                                           | One month | Failed                              |
 | ~~Follow up with past clients~~                            | One time  | ~~Production~~ Done!                |
