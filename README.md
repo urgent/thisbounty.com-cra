@@ -123,24 +123,26 @@ Add Netlify identity.
 
 ## Goals
 
-| Goals                                                      | Timeline  | Progress tracking        |
-| ---------------------------------------------------------- | --------- | ------------------------ |
-| Get in the habit of doing things perfect, no shortcuts     | Daily     | Continuous               |
-| Focus to the point of subvocalize all actions              | Daily     | Continuous               |
-| Eliminate distractions. It happens, recogonize it, move on | Daily     | Continuous               |
-| Avoid time sinks, paths to nowhere, fixations              | Daily     | Continuous               |
-| Fun, humble, solve a need                                  | Daily     | Continuous               |
-| Visualize before acting                                    | Daily     | Reflection               |
-| Experience, done it before, no surprises                   | Daily     | thisbounty.com           |
-| Abstraction, allow tolerance for surprises                 | Daily     | Reflection               |
-| Reflection, identify and acknowledge mistakes              | Daily     | -                        |
-| Hire programmers                                           | 3/5       | Profitable work ready    |
-| Add Netlify identity                                       | 3/2       | Do it in one day         |
-| Flip a project                                             | 3/2       | Projects? buyers?        |
-| Salvage a project                                          | 3/2       | Launch? Earn? Fast work? |
-| ~~Build thisbounty.com~~                                   | One month | Failed                   |
-| ~~Get a client~~                                           | One month | Failed                   |
-| ~~Follow up with past clients~~                            | One time  | ~~Production~~ Done!     |
+| Goals                                                      | Timeline  | Progress tracking                   |
+| ---------------------------------------------------------- | --------- | ----------------------------------- |
+| Get in the habit of doing things perfect, no shortcuts     | Daily     | Continuous                          |
+| Focus to the point of subvocalize all actions              | Daily     | Continuous                          |
+| Eliminate distractions. It happens, recogonize it, move on | Daily     | Continuous                          |
+| Avoid time sinks, paths to nowhere, fixations              | Daily     | Continuous                          |
+| Fun, humble, solve a need                                  | Daily     | Continuous                          |
+| Visualize before acting                                    | Daily     | Reflection                          |
+| Experience, done it before, no surprises                   | Daily     | thisbounty.com                      |
+| Abstraction, allow tolerance for surprises                 | Daily     | Reflection                          |
+| Reflection, identify and acknowledge mistakes              | Daily     | -                                   |
+| Hire programmers                                           | 3/5       | Profitable work ready               |
+| Add Netlify identity                                       | 3/2       | Do it in one day                    |
+| Flip a project                                             | 3/31      | Projects? buyers?                   |
+| Salvage a project                                          | 3/31      | Launch? Earn? Fast work?            |
+| Navigation                                                 | 3/31      | Data, Filter, Click, Router/Back    |
+| Comission work                                             | 4/31      | Bomb button, add, TTL, money, users |
+| ~~Build thisbounty.com~~                                   | One month | Failed                              |
+| ~~Get a client~~                                           | One month | Failed                              |
+| ~~Follow up with past clients~~                            | One time  | ~~Production~~ Done!                |
 
 ## Past Work
 
