@@ -6,7 +6,7 @@ exports[`Userbar renders correctly 1`] = `
 >
   <svg
     aria-hidden="true"
-    className="svg-inline--fa fa-user fa-w-14 sc-gsTCUz ewByHD"
+    className="svg-inline--fa fa-user fa-w-14 sc-gsTCUz djKOXD"
     data-icon="user"
     data-prefix="fas"
     focusable="false"
@@ -97,7 +97,7 @@ exports[`Userbar renders correctly 2`] = `
 >
   <svg
     aria-hidden="true"
-    className="svg-inline--fa fa-user fa-w-14 sc-gsTCUz ewByHD"
+    className="svg-inline--fa fa-user fa-w-14 sc-gsTCUz djKOXD"
     data-icon="user"
     data-prefix="fas"
     focusable="false"
@@ -188,7 +188,7 @@ exports[`Userbar renders correctly 3`] = `
 >
   <svg
     aria-hidden="true"
-    className="svg-inline--fa fa-user fa-w-14 sc-gsTCUz ewByHD"
+    className="svg-inline--fa fa-user fa-w-14 sc-gsTCUz djKOXD"
     data-icon="user"
     data-prefix="fas"
     focusable="false"

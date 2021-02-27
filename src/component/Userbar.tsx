@@ -12,7 +12,7 @@ const Icon = styled(FontAwesomeIcon)`
   stroke-width: 28px;
   color: #37f;
   margin-left: 4px;
-  z-index: 100;
+  z-index: 1;
   font-size: 24px;
 `;
 

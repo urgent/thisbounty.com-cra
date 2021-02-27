@@ -242,7 +242,7 @@ exports[`Bounty renders correctly 1`] = `
     >
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-user fa-w-14 sc-jSgupP gDjMXc"
+        className="svg-inline--fa fa-user fa-w-14 sc-jSgupP iqehaM"
         data-icon="user"
         data-prefix="fas"
         focusable="false"

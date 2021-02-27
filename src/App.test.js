@@ -4,5 +4,5 @@ import App from './App';
 
 test('renders typical elements', () => {
   const { container } = render(<App />);
-  expect(screen.getByText(/readme.md/i)).toBeInTheDocument();
+  expect(screen.getByText(/thisbounty.com/i)).toBeInTheDocument();
 });
