@@ -26,6 +26,7 @@ const Main = styled.main`
 `;
 
 const TitleBar = styled.header`
+  display: flex;
   margin: 0;
   background: #212529;
   grid-row: titlebar;
@@ -36,6 +37,11 @@ const TitleBar = styled.header`
 
   a {
     color: #fff;
+    margin-right: 20px;
+  }
+
+  div {
+    margin-left: 20px;
   }
 `;
 
@@ -68,7 +74,8 @@ function App() {
   return (
     <Flag>
       <TitleBar>
-        <a href="/">thisbounty.com</a>
+        <a href="/">thisbounty.com</a> |{" "}
+        <div data-netlify-identity-button></div>
       </TitleBar>
       <Main>
         <QueryRenderer
