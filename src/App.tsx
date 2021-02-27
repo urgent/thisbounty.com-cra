@@ -14,7 +14,7 @@ const Flag = styled.div`
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-  grid-template-rows: [titlebar] 2rem [app] 1fr [footer] 3rem;
+  grid-template-rows: [titlebar] 2rem [app] 1fr;
   grid-template-columns: 1fr;
 `;
 
@@ -39,23 +39,9 @@ const TitleBar = styled.header`
   }
 `;
 
-const Footer = styled.footer`
-  margin: 0;
-  background: #212529;
-  grid-row: footer;
-  width: 100%;
-  font-size: 0.8rem;
-  padding: 0rem 0 0.5rem 1rem;
-  text-align: center;
-
-  a {
-    color: #fff;
-  }
-`;
-
 const AppQuery = graphql`
   query AppQuery {
-    bounty(order_by: { bounty_id: asc }) {
+    bounty(order_by: { bounty_id: asc }, where: { parent: { _eq: 0 } }) {
       bounty_id
       title
       image
@@ -91,7 +77,7 @@ function App() {
           variables={{}}
           render={({ error, props }: { error: any; props: any }) => {
             if (error) {
-              console.log(`error ${error}`);
+              console.log(error);
               return <div>Error!</div>;
             }
             if (!props) {
@@ -103,18 +89,6 @@ function App() {
           }}
         />
       </Main>
-      <Footer>
-        <ul>
-          <li>
-            <a
-              href="https://github.com/urgent/thisbounty.com"
-              style={{ color: "#fff" }}
-            >
-              readme.md
-            </a>
-          </li>
-        </ul>
-      </Footer>
     </Flag>
   );
 }

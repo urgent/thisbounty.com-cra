@@ -35,7 +35,7 @@ export type AppQuery = {
 
 /*
 query AppQuery {
-  bounty(order_by: {bounty_id: asc}) {
+  bounty(order_by: {bounty_id: asc}, where: {parent: {_eq: 0}}) {
     bounty_id
     title
     image
@@ -68,6 +68,15 @@ var v0 = [
         "name": "order_by",
         "value": {
           "bounty_id": "asc"
+        }
+      },
+      {
+        "kind": "Literal",
+        "name": "where",
+        "value": {
+          "parent": {
+            "_eq": 0
+          }
         }
       }
     ],
@@ -203,7 +212,7 @@ var v0 = [
         "storageKey": null
       }
     ],
-    "storageKey": "bounty(order_by:{\"bounty_id\":\"asc\"})"
+    "storageKey": "bounty(order_by:{\"bounty_id\":\"asc\"},where:{\"parent\":{\"_eq\":0}})"
   }
 ];
 return {
@@ -224,14 +233,14 @@ return {
     "selections": (v0/*: any*/)
   },
   "params": {
-    "cacheID": "b2621875843124fa37833a35cf3fea07",
+    "cacheID": "8658c6e7618e6d7296769e236a68dba1",
     "id": null,
     "metadata": {},
     "name": "AppQuery",
     "operationKind": "query",
-    "text": "query AppQuery {\n  bounty(order_by: {bounty_id: asc}) {\n    bounty_id\n    title\n    image\n    imageAlt\n    life\n    lifeMax\n    lifeEnhance\n    money\n    moneyMax\n    users\n    usersMax\n    programmers\n    servers\n    scripts\n    libraries\n    tags\n    tagLinks\n    hurtLog\n  }\n}\n"
+    "text": "query AppQuery {\n  bounty(order_by: {bounty_id: asc}, where: {parent: {_eq: 0}}) {\n    bounty_id\n    title\n    image\n    imageAlt\n    life\n    lifeMax\n    lifeEnhance\n    money\n    moneyMax\n    users\n    usersMax\n    programmers\n    servers\n    scripts\n    libraries\n    tags\n    tagLinks\n    hurtLog\n  }\n}\n"
   }
 };
 })();
-(node as any).hash = '9087a7ff17e2a6e8827f9918248147e2';
+(node as any).hash = 'f83aaa66a261f39889004b9c79e75ef0';
 export default node;

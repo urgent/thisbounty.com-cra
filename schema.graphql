@@ -13,23 +13,16 @@ type bounty {
   ): jsonb!
   image: String!
   imageAlt: String!
-  leads(
-    # JSON select path
-    path: String
-  ): jsonb!
   libraries: Int!
   life: Int!
   lifeEnhance: smallint!
   lifeMax: Int!
   money: Int!
   moneyMax: Int!
+  parent: Int
   programmers: Int!
   scripts: Int!
   servers: Int!
-  suits(
-    # JSON select path
-    path: String
-  ): jsonb!
   tagLinks(
     # JSON select path
     path: String
@@ -82,8 +75,6 @@ input bounty_aggregate_order_by {
 # append existing jsonb value of filtered columns with new jsonb value
 input bounty_append_input {
   hurtLog: jsonb
-  leads: jsonb
-  suits: jsonb
   tagLinks: jsonb
   tags: jsonb
 }
@@ -103,6 +94,7 @@ type bounty_avg_fields {
   lifeMax: Float
   money: Float
   moneyMax: Float
+  parent: Float
   programmers: Float
   scripts: Float
   servers: Float
@@ -119,6 +111,7 @@ input bounty_avg_order_by {
   lifeMax: order_by
   money: order_by
   moneyMax: order_by
+  parent: order_by
   programmers: order_by
   scripts: order_by
   servers: order_by
@@ -135,17 +128,16 @@ input bounty_bool_exp {
   hurtLog: jsonb_comparison_exp
   image: String_comparison_exp
   imageAlt: String_comparison_exp
-  leads: jsonb_comparison_exp
   libraries: Int_comparison_exp
   life: Int_comparison_exp
   lifeEnhance: smallint_comparison_exp
   lifeMax: Int_comparison_exp
   money: Int_comparison_exp
   moneyMax: Int_comparison_exp
+  parent: Int_comparison_exp
   programmers: Int_comparison_exp
   scripts: Int_comparison_exp
   servers: Int_comparison_exp
-  suits: jsonb_comparison_exp
   tagLinks: jsonb_comparison_exp
   tags: jsonb_comparison_exp
   title: String_comparison_exp
@@ -162,8 +154,6 @@ enum bounty_constraint {
 # delete the field or element with specified path (for JSON arrays, negative integers count from the end)
 input bounty_delete_at_path_input {
   hurtLog: [String]
-  leads: [String]
-  suits: [String]
   tagLinks: [String]
   tags: [String]
 }
@@ -172,8 +162,6 @@ input bounty_delete_at_path_input {
 # end). throws an error if top level container is not an array
 input bounty_delete_elem_input {
   hurtLog: Int
-  leads: Int
-  suits: Int
   tagLinks: Int
   tags: Int
 }
@@ -181,8 +169,6 @@ input bounty_delete_elem_input {
 # delete key/value pair or string element. key/value pairs are matched based on their key value
 input bounty_delete_key_input {
   hurtLog: String
-  leads: String
-  suits: String
   tagLinks: String
   tags: String
 }
@@ -196,6 +182,7 @@ input bounty_inc_input {
   lifeMax: Int
   money: Int
   moneyMax: Int
+  parent: Int
   programmers: Int
   scripts: Int
   servers: Int
@@ -209,17 +196,16 @@ input bounty_insert_input {
   hurtLog: jsonb
   image: String
   imageAlt: String
-  leads: jsonb
   libraries: Int
   life: Int
   lifeEnhance: smallint
   lifeMax: Int
   money: Int
   moneyMax: Int
+  parent: Int
   programmers: Int
   scripts: Int
   servers: Int
-  suits: jsonb
   tagLinks: jsonb
   tags: jsonb
   title: String
@@ -238,6 +224,7 @@ type bounty_max_fields {
   lifeMax: Int
   money: Int
   moneyMax: Int
+  parent: Int
   programmers: Int
   scripts: Int
   servers: Int
@@ -257,6 +244,7 @@ input bounty_max_order_by {
   lifeMax: order_by
   money: order_by
   moneyMax: order_by
+  parent: order_by
   programmers: order_by
   scripts: order_by
   servers: order_by
@@ -276,6 +264,7 @@ type bounty_min_fields {
   lifeMax: Int
   money: Int
   moneyMax: Int
+  parent: Int
   programmers: Int
   scripts: Int
   servers: Int
@@ -295,6 +284,7 @@ input bounty_min_order_by {
   lifeMax: order_by
   money: order_by
   moneyMax: order_by
+  parent: order_by
   programmers: order_by
   scripts: order_by
   servers: order_by
@@ -331,17 +321,16 @@ input bounty_order_by {
   hurtLog: order_by
   image: order_by
   imageAlt: order_by
-  leads: order_by
   libraries: order_by
   life: order_by
   lifeEnhance: order_by
   lifeMax: order_by
   money: order_by
   moneyMax: order_by
+  parent: order_by
   programmers: order_by
   scripts: order_by
   servers: order_by
-  suits: order_by
   tagLinks: order_by
   tags: order_by
   title: order_by
@@ -357,8 +346,6 @@ input bounty_pk_columns_input {
 # prepend existing jsonb value of filtered columns with new jsonb value
 input bounty_prepend_input {
   hurtLog: jsonb
-  leads: jsonb
-  suits: jsonb
   tagLinks: jsonb
   tags: jsonb
 }
@@ -376,9 +363,6 @@ enum bounty_select_column {
 
   # column name
   imageAlt
-
-  # column name
-  leads
 
   # column name
   libraries
@@ -399,6 +383,9 @@ enum bounty_select_column {
   moneyMax
 
   # column name
+  parent
+
+  # column name
   programmers
 
   # column name
@@ -406,9 +393,6 @@ enum bounty_select_column {
 
   # column name
   servers
-
-  # column name
-  suits
 
   # column name
   tagLinks
@@ -432,17 +416,16 @@ input bounty_set_input {
   hurtLog: jsonb
   image: String
   imageAlt: String
-  leads: jsonb
   libraries: Int
   life: Int
   lifeEnhance: smallint
   lifeMax: Int
   money: Int
   moneyMax: Int
+  parent: Int
   programmers: Int
   scripts: Int
   servers: Int
-  suits: jsonb
   tagLinks: jsonb
   tags: jsonb
   title: String
@@ -459,6 +442,7 @@ type bounty_stddev_fields {
   lifeMax: Float
   money: Float
   moneyMax: Float
+  parent: Float
   programmers: Float
   scripts: Float
   servers: Float
@@ -475,6 +459,7 @@ input bounty_stddev_order_by {
   lifeMax: order_by
   money: order_by
   moneyMax: order_by
+  parent: order_by
   programmers: order_by
   scripts: order_by
   servers: order_by
@@ -491,6 +476,7 @@ type bounty_stddev_pop_fields {
   lifeMax: Float
   money: Float
   moneyMax: Float
+  parent: Float
   programmers: Float
   scripts: Float
   servers: Float
@@ -507,6 +493,7 @@ input bounty_stddev_pop_order_by {
   lifeMax: order_by
   money: order_by
   moneyMax: order_by
+  parent: order_by
   programmers: order_by
   scripts: order_by
   servers: order_by
@@ -523,6 +510,7 @@ type bounty_stddev_samp_fields {
   lifeMax: Float
   money: Float
   moneyMax: Float
+  parent: Float
   programmers: Float
   scripts: Float
   servers: Float
@@ -539,6 +527,7 @@ input bounty_stddev_samp_order_by {
   lifeMax: order_by
   money: order_by
   moneyMax: order_by
+  parent: order_by
   programmers: order_by
   scripts: order_by
   servers: order_by
@@ -555,6 +544,7 @@ type bounty_sum_fields {
   lifeMax: Int
   money: Int
   moneyMax: Int
+  parent: Int
   programmers: Int
   scripts: Int
   servers: Int
@@ -571,6 +561,7 @@ input bounty_sum_order_by {
   lifeMax: order_by
   money: order_by
   moneyMax: order_by
+  parent: order_by
   programmers: order_by
   scripts: order_by
   servers: order_by
@@ -593,9 +584,6 @@ enum bounty_update_column {
   imageAlt
 
   # column name
-  leads
-
-  # column name
   libraries
 
   # column name
@@ -614,6 +602,9 @@ enum bounty_update_column {
   moneyMax
 
   # column name
+  parent
+
+  # column name
   programmers
 
   # column name
@@ -621,9 +612,6 @@ enum bounty_update_column {
 
   # column name
   servers
-
-  # column name
-  suits
 
   # column name
   tagLinks
@@ -650,6 +638,7 @@ type bounty_var_pop_fields {
   lifeMax: Float
   money: Float
   moneyMax: Float
+  parent: Float
   programmers: Float
   scripts: Float
   servers: Float
@@ -666,6 +655,7 @@ input bounty_var_pop_order_by {
   lifeMax: order_by
   money: order_by
   moneyMax: order_by
+  parent: order_by
   programmers: order_by
   scripts: order_by
   servers: order_by
@@ -682,6 +672,7 @@ type bounty_var_samp_fields {
   lifeMax: Float
   money: Float
   moneyMax: Float
+  parent: Float
   programmers: Float
   scripts: Float
   servers: Float
@@ -698,6 +689,7 @@ input bounty_var_samp_order_by {
   lifeMax: order_by
   money: order_by
   moneyMax: order_by
+  parent: order_by
   programmers: order_by
   scripts: order_by
   servers: order_by
@@ -714,6 +706,7 @@ type bounty_variance_fields {
   lifeMax: Float
   money: Float
   moneyMax: Float
+  parent: Float
   programmers: Float
   scripts: Float
   servers: Float
@@ -730,6 +723,7 @@ input bounty_variance_order_by {
   lifeMax: order_by
   money: order_by
   moneyMax: order_by
+  parent: order_by
   programmers: order_by
   scripts: order_by
   servers: order_by
