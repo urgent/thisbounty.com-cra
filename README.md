@@ -6,20 +6,40 @@ Programming computers.
 
 ## What problem am I trying to solve?
 
-Computer programming experience. "done it before". Take an entire project from start to finish, so there are no surprises when working for future clients.
+I have free time. I have computer programming knowledge. What do I do with it?
 
-Features:
+Think of picking a sport. Instead of being dead set on the next Michael Jordan, get in really good shape, try every sport, and let the sport pick you.
 
-1. Personal workspace: Fast response to clients, test and preview new features.
-2. Frontend, server, build, platforms: Provisioned, internal tools ready to use on new projects.
-3. Test leading technology: Something new launches, have the infrastructure to try it out before using it for clients.
-4. Potential sales: Start with a broad sales funnel, maybe even negative, spend to find context and intent, convert to client.
+## Products
 
-## Principles
+1. Churn
+2. Flip
+3. Salvage
+4. No catch, no pay
+
+## User Persona
+
+Computer programmers with free time.
+
+## User Journey
+
+Website visitor lands on thisbounty.com
+
+Visitor clicks on one of the products.
+
+Website drills down. Elements stay the same. New lists.
+
+1. Churn: Working for free, ready to say no.
+2. Flip: Looking to hire or move, about to say no.
+3. Salvage: Said no, recapturing value.
+4. No catch, no pay: Working for real. Burn the boats.
+
+## Guidance
 
 1. Done it before: Experience. First build internal tools. Then launch proven solutions as products to the market.
-2. No customs: Make it look like the manual as close as possible.
-3. Goals: Create, track with a strong and defined focus.
+   At some point, every job is different. When building software, responsible for every feature, and every new problem. Markets change faster than experience builds. Never underestimate the amount of work involved.
+2. No customs: Make it look like the manual as close as possible. Be wary of domain specific business logic. Look at that first.
+3. Goals: Create, track with a strong and defined focus. Daily and long term. Concrete goals.
 4. Focus on the core business: How does it make money? How do I get paid?
 5. Build clear rules outside of the tech.
 6. List everything not core business. At least you are aware.
@@ -31,10 +51,6 @@ Features:
 12. Quick launch: Even if it's just a newsletter signup.
 13. Do not pay for advertising: Get clients instead, and share.
 14. Walk away: Leave it for others to build. Be happy it got built. Sometimes it's the fastest way.
-
-## User Persona
-
-Computer programmers who need experience.
 
 ## What problems am I not trying to solve, and why?
 
@@ -58,64 +74,106 @@ Too many different approaches. Every product is different.
 
 Security nightmare. Easier to pay people.
 
+### Done it before, building experience
+
+Enough experience already. Now in specific domain knowledge.
+
 ## Application of thisbounty.com
 
-1. Done it before: `Core tech done before. Build experience with this project.`
-2. No customs: `React, relay, styled-components. Removed relay experimental. No next.js, too many cross cuts`
-3. Goals: `Deadline of 26th February for "done it before".`
-4. Focus on the core business: `Build experience for future clients`
+1. Done it before: `Yes.`
+2. No customs: `React, Relay, Hasura, Netlify. What are the domains, and required business intelligence for churn, flip, salvage, and no catch no pay?`
+3. Goals: `See goals. Are goals concrete and clear? Tracking? Daily and long term. How to evaluate?`
+4. Focus on the core business: `Churn, flip, salvage, and no catch no pay.`
 5. Build clear rules outside of the tech. `See Rules`
 6. List everything not core business. At least you are aware. `See ARCHITECTURE.md`
-7. Fix bugs, add features: `Bug: Haven't "done it before." Feature: Provisioning when clicking bounty.`
-8. No hot fixes: `Focus on "done it before" Then worry about conversions`
+7. Fix bugs, add features: `Bug: Knowledge, free time, no work. Feature: Navigation of available work.`
+8. No hot fixes: `Scrapped leads, categories. One UI component. Churn to promote saying no.`
 9. Use spreadsheets, IDEs and version control instead of inner platforms. `No frontend mutations. Change through Hasura`
-10. Users expect robust features: `Visualization only. No conversion`
-11. Either don't do it, or do it full effort. `Keeping features minimal. Not afraid to scrap entire thing`
-12. Quick launch: `Launched with an excel sheet`
-13. Do not pay for advertising: `Finding clients`
-14. Walk away: `Left decentralization behind`
+10. Users expect robust features: `Visualization only. Add through Hasura. May add identity for users to comission work.`
+11. Either don't do it, or do it full effort. `Keeping features minimal. Not afraid to scrap entire thing. Flip and salvage for scrapped projects.`
+12. Quick launch: `Launched with an excel sheet. Need quick way to comission work. Login, and click bomb button. That's it.`
+13. Do not pay for advertising: `Finding clients on existing platforms.`
+14. Walk away: `Left decentralization behind. Churn, flip and salvage promote walk away.`
 
 ## Rules
 
 1. Read this first on start of new workday.
-2. Growth: 5 new bids prior to work on thisbounty.com
+2. Growth: 10 new bids prior to work on thisbounty.com
 3. No surprises: Work for free before agreeing to terms. State that in bid to increase conversions.
-4. Time: Keep an itinerary before work
+4. Time: Keep an itinerary before work. Use clockify.
 5. Track: At close, reflect on each workday. Keep a list of goals. Work backwards from deadline.
 6. Plan: After reflection, visualize next workday
 7. Focus: Pomodoro on while working, no exceptions
 8. Perfection: If it's not perfect, get rid of it, move on
+9. Churn, flip, and salvage.
 
 ## Navigation
 
-Click a bounty. Provision resources popup, like Hasura does with Heroku
+Click a bounty. Work appears by drilling.
+
+Login with identity provider. Click bomb. Stays on in alarm until I contact back. How to scale that up eventually? No contact. Bulk assign to churn? How to one piece flow that?
+
+TTL? Allow community to pick up? Click new lead, then bomb button it to keep it alive? Assign a wallet. Pay to it? Assign a metric, update users?
 
 ## Public Release
 
-2/26, hire someone to work on thisbounty.com
+March: Hire JavaScript programmers. Not just from client side. Build connections.
 
-Actions, start with text chat on left side when clicking goals, principles.
-
-Move onto provisioning, like Hasura does with Heroku.
-
-If someone wants new work, they can open an issue on github. Make sure I'm notified.
+Add Netlify identity.
 
 ## Goals
 
-| Goals                                                      | Timeline  | Progress tracking                |
-| ---------------------------------------------------------- | --------- | -------------------------------- |
-| Get in the habit of doing things perfect, no shortcuts     | Daily     | Continuous                       |
-| Focus to the point of subvocalize all actions              | Daily     | Continuous                       |
-| Eliminate distractions. It happens, recogonize it, move on | Daily     | Continuous                       |
-| Avoid time sinks, paths to nowhere, fixations              | Daily     | Continuous                       |
-| Fun, humble, solve a need                                  | Daily     | Continuous                       |
-| Visualize before acting                                    | Daily     | Reflection                       |
-| Experience, done it before, no surprises                   | Daily     | thisbounty.com                   |
-| Abstraction, allow tolerance for surprises                 | Daily     | Reflection                       |
-| Reflection, identify and acknowledge mistakes              | Daily     | -                                |
-| Build thisbounty.com                                       | One month | 26th February, stop work, review |
-| Get a client                                               | One month | 26th February, stop work, review |
-| ~~Follow up with past clients~~                            | One time  | ~~Production~~ Done!             |
+| Goals                                                      | Timeline  | Progress tracking        |
+| ---------------------------------------------------------- | --------- | ------------------------ |
+| Get in the habit of doing things perfect, no shortcuts     | Daily     | Continuous               |
+| Focus to the point of subvocalize all actions              | Daily     | Continuous               |
+| Eliminate distractions. It happens, recogonize it, move on | Daily     | Continuous               |
+| Avoid time sinks, paths to nowhere, fixations              | Daily     | Continuous               |
+| Fun, humble, solve a need                                  | Daily     | Continuous               |
+| Visualize before acting                                    | Daily     | Reflection               |
+| Experience, done it before, no surprises                   | Daily     | thisbounty.com           |
+| Abstraction, allow tolerance for surprises                 | Daily     | Reflection               |
+| Reflection, identify and acknowledge mistakes              | Daily     | -                        |
+| Hire programmers                                           | 3/5       | Profitable work ready    |
+| Add Netlify identity                                       | 3/2       | Do it in one day         |
+| Flip a project                                             | 3/2       | Projects? buyers?        |
+| Salvage a project                                          | 3/2       | Launch? Earn? Fast work? |
+| ~~Build thisbounty.com~~                                   | One month | Failed                   |
+| ~~Get a client~~                                           | One month | Failed                   |
+| ~~Follow up with past clients~~                            | One time  | ~~Production~~ Done!     |
+
+## Past Work:
+
+### 2/26:
+
+Goals:
+
+"done it before"
+
+What have I "done before":
+
+- React components, and create react app
+- Styled components
+- Hasura
+- Relay Query Render
+- Relay Subscriptions
+- Jest, Red/Green refactor
+- Netlify serverless functions
+
+What haven't I "done before":
+
+- SASS
+- Business Logic
+- Relay Fragments
+- Dates
+
+Get a client
+
+- Orlando Magic website
+- landbot, project storm
+- Draft Card
+
+Found them, got them, couldn't keep them. Too much work for too little money.
 
 ---
 
