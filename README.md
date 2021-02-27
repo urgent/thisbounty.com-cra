@@ -134,6 +134,8 @@ Add Netlify identity.
 | Experience, done it before, no surprises                   | Daily     | thisbounty.com                      |
 | Abstraction, allow tolerance for surprises                 | Daily     | Reflection                          |
 | Reflection, identify and acknowledge mistakes              | Daily     | -                                   |
+| One pomodoro                                               | 2/27      | -                                   |
+| Clockify                                                   | 2/27      | -                                   |
 | Hire programmers                                           | 3/5       | Profitable work ready               |
 | Add Netlify identity                                       | 3/2       | Do it in one day                    |
 | Flip a project                                             | 3/31      | Projects? buyers?                   |
