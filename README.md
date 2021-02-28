@@ -135,7 +135,7 @@ Add Netlify identity.
 | Abstraction, allow tolerance for surprises                 | Daily     | Reflection                          |
 | Reflection, identify and acknowledge mistakes              | Daily     | -                                   |
 | One pomodoro                                               | 2/27      | -                                   |
-| Clockify                                                   | 2/27      | -                                   |
+| ~~Clockify~~                                               | 2/27      | -                                   |
 | Hire programmers                                           | 3/5       | Profitable work ready               |
 | ~~Add Netlify identity~~                                   | 3/2       | Done!                               |
 | Flip a project                                             | 3/31      | Projects? buyers?                   |
